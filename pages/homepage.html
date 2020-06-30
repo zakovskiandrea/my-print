@@ -4,12 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>My Print</title>
 </head>
 
 <body>
-
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__logo-box">
+            <img class="header__logo" src="../images/logo.svg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link">Почетна</a></li>
+                <li class="header__item"><a href="#" class="header__link">За Нас</a></li>
+                <li class="header__item"><a href="#" class="header__link">Услуги</a></li>
+                <li class="header__item"><a href="#" class="header__link">Производи</a></li>
+                <li class="header__item"><a href="#" class="header__link">Водич За Дизајнери</a></li>
+            </ul>
+            <a href="#" class="header__btn">Е-Продавница</a>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <!-- SECTION MAIN -->
+    <section class="homepage-main">
+        <div class="homepage-main__slider-box">
+            <div class="swiper-container swiper-container--homepage">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide--1">Slide 1</div>
+                    <div class="swiper-slide swiper-slide--2">Slide 2</div>
+                    <div class="swiper-slide swiper-slide--3">Slide 3</div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION MAIN END -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="../app.js"></script>
 </body>
 
 </html>
