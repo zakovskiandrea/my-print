@@ -1,0 +1,14 @@
+.btn-primary {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    color: #2f2e2e;
+    padding: 2rem 5.5rem;
+    border: 1px solid #bf2459;
+    border-radius: 50px;
+  }
+}

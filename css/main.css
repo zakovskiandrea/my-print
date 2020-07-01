@@ -11,8 +11,32 @@ html {
 body {
   box-sizing: border-box; }
 
+.btn-primary:link, .btn-primary:visited {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  color: #2f2e2e;
+  padding: 2rem 5.5rem;
+  border: 1px solid #bf2459;
+  border-radius: 50px; }
+
 body {
   font-family: "Montserrat", sans-serif; }
+
+.heading-1 {
+  font-size: 8rem;
+  line-height: 9.5rem;
+  text-transform: uppercase;
+  color: #000; }
+
+.heading-6 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #bf2459; }
 
 .header {
   height: 10rem;
@@ -58,18 +82,35 @@ body {
     margin-right: 10rem; }
 
 .homepage-main {
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
   .homepage-main__slider-box {
     height: 100%; }
+  .homepage-main__icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 10rem;
+    transform: translateY(-50%);
+    z-index: 10; }
+    .homepage-main__icons .icon--fb {
+      margin-bottom: 4.5rem; }
 
 .swiper-container--homepage {
   height: 100%; }
-  .swiper-container--homepage .swiper-slide--1 {
-    background-color: wheat; }
-  .swiper-container--homepage .swiper-slide--2 {
-    background-color: lightblue; }
-  .swiper-container--homepage .swiper-slide--3 {
-    background-color: lightgray; }
+  .swiper-container--homepage .swiper-slide {
+    display: flex;
+    align-items: center; }
+    .swiper-container--homepage .swiper-slide--1 {
+      background-image: url("../images/bckg-main.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .swiper-container--homepage .swiper-slide--2 {
+      background-color: lightblue; }
+    .swiper-container--homepage .swiper-slide--3 {
+      background-color: lightgray; }
   .swiper-container--homepage .swiper-scrollbar {
     left: 14rem;
     height: 50%;
@@ -80,3 +121,17 @@ body {
     background-color: #2f2e2e;
     width: 7px;
     left: -1px; }
+
+.slide-content {
+  width: 40%;
+  margin-left: 20rem; }
+  .slide-content__label {
+    margin-bottom: 4rem; }
+  .slide-content__heading {
+    margin-bottom: 4rem; }
+  .slide-content__text {
+    font-size: 2.4rem;
+    color: #000;
+    line-height: 40px;
+    letter-spacing: -0.015em;
+    margin-bottom: 6rem; }
