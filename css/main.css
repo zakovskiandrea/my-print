@@ -32,6 +32,9 @@ body {
 .btn-secondary--blue {
   background-color: #18a0fb; }
 
+.btn-secondary--blue-dark {
+  background-color: #2737c4; }
+
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -266,3 +269,22 @@ body {
   transform: rotate(-45deg);
   margin-bottom: 1px;
   margin-left: 5px; }
+
+.homepage-about {
+  padding: 12rem 0;
+  padding-left: 10%;
+  background-image: url("../images/bckg-book.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .homepage-about__label {
+    margin-bottom: 4rem; }
+  .homepage-about__heading {
+    color: #191919;
+    margin-bottom: 3rem; }
+  .homepage-about__text {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    color: rgba(4, 4, 4, 0.8);
+    margin-bottom: 8rem;
+    width: 40%; }

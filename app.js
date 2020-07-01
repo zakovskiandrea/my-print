@@ -21,3 +21,21 @@ var swiper = new Swiper(".swiper-container--eshop", {
     prevEl: ".homepage-eshop__slider-box .arrow--prev",
   },
 });
+
+var swiper = new Swiper(".swiper-container--branding", {
+  slidesPerView: 1,
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination-2",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        '<span class="' +
+        "testing" +
+        '">' +
+        "Vnatreshno Brendiranje" +
+        "</span>"
+      );
+    },
+  },
+});
