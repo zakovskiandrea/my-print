@@ -30,3 +30,49 @@
     background-color: #2737c4;
   }
 }
+
+.product-card {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  &__img {
+    height: 20rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 2.5rem;
+  }
+  &__heading {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+  }
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__price {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.8);
+
+    span {
+      color: #000000;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+  }
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+  }
+}
