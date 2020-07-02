@@ -140,6 +140,42 @@ body {
     padding: 2rem 4rem;
     margin-right: 10rem; }
 
+.contact {
+  background-color: #1a1919;
+  padding: 15rem 0; }
+  .contact .u-wrapper {
+    display: flex; }
+  .contact__content {
+    flex: 1; }
+  .contact__label {
+    margin-bottom: 4rem; }
+  .contact__text {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    color: #fff;
+    margin-bottom: 4rem;
+    width: 90%; }
+  .contact__list {
+    list-style: none; }
+  .contact__item {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center; }
+    .contact__item:not(:last-child) {
+      margin-bottom: 3rem; }
+    .contact__item img {
+      margin-right: 5rem; }
+  .contact__map-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contact__map-box iframe {
+      height: 100%;
+      width: 100%; }
+
 .homepage-main {
   height: 100vh;
   position: relative; }
