@@ -31,3 +31,12 @@ var swiper = new Swiper(".swiper-container--products", {
     prevEl: ".homepage-products__slider-box .arrow--prev",
   },
 });
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $(".header").addClass("header--active");
+  } else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $(".header").removeClass("header--active");
+  }
+});

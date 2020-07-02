@@ -81,6 +81,8 @@ body {
   font-size: 4.8rem;
   line-height: 134%;
   color: #000; }
+  .heading-2--white {
+    color: #fff; }
 
 .heading-3 {
   font-size: 3.6rem;
@@ -92,6 +94,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #bf2459; }
+  .heading-4--blue {
+    color: #5dbeff; }
 
 .u-wrapper {
   width: 80%;
@@ -105,7 +109,13 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 10; }
+  z-index: 20; }
+  .header--white {
+    background-color: #fff; }
+    .header--white li:last-child {
+      margin-right: 5rem; }
+  .header--active {
+    background-color: #fff; }
   .header__logo-box {
     height: 50%;
     margin-left: 10rem; }
@@ -120,8 +130,11 @@ body {
     display: flex;
     list-style: none;
     margin-right: 4rem; }
-  .header__item:not(:last-child) {
-    margin-right: 4rem; }
+  .header__item {
+    display: flex;
+    align-items: center; }
+    .header__item:not(:last-child) {
+      margin-right: 4rem; }
   .header__link:link, .header__link:visited {
     text-decoration: none;
     text-transform: uppercase;
@@ -187,7 +200,8 @@ body {
   .footer__social {
     font-size: 2rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
     .footer__social:not(:last-child) {
       margin-right: 6rem; }
     .footer__social img {
@@ -413,3 +427,14 @@ body {
         right: 5%; }
   .homepage-products__btn {
     align-self: center; }
+
+.eshop-landing {
+  height: 70rem;
+  padding-top: 26rem;
+  background-image: url("../images/bckg-envelops.png");
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .eshop-landing__label {
+    margin-bottom: 4rem; }
+  .eshop-landing__heading {
+    width: 55%; }

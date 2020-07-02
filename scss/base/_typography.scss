@@ -18,6 +18,10 @@ body {
   font-size: 4.8rem;
   line-height: 134%;
   color: #000;
+
+  &--white {
+    color: #fff;
+  }
 }
 
 .heading-3 {
@@ -31,4 +35,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #bf2459;
+
+  &--blue {
+    color: #5dbeff;
+  }
 }

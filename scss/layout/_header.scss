@@ -6,7 +6,20 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
+
+  &--white {
+    background-color: #fff;
+    li {
+      &:last-child {
+        margin-right: 5rem;
+      }
+    }
+  }
+
+  &--active {
+    background-color: #fff;
+  }
 
   &__logo-box {
     height: 50%;
@@ -27,6 +40,8 @@
     margin-right: 4rem;
   }
   &__item {
+    display: flex;
+    align-items: center;
     &:not(:last-child) {
       margin-right: 4rem;
     }

@@ -1,0 +1,13 @@
+.eshop-landing {
+  height: 70rem;
+  padding-top: 26rem;
+  background-image: url("../images/bckg-envelops.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  &__label {
+    margin-bottom: 4rem;
+  }
+  &__heading {
+    width: 55%;
+  }
+}
