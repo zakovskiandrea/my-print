@@ -1,0 +1,30 @@
+.footer {
+  padding: 2rem 0;
+  .u-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__socials {
+    display: flex;
+  }
+
+  &__social {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+    img {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-right: 2.5rem;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.8rem;
+  }
+}

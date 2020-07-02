@@ -176,6 +176,27 @@ body {
       height: 100%;
       width: 100%; }
 
+.footer {
+  padding: 2rem 0; }
+  .footer .u-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__socials {
+    display: flex; }
+  .footer__social {
+    font-size: 2rem;
+    display: flex;
+    align-items: center; }
+    .footer__social:not(:last-child) {
+      margin-right: 6rem; }
+    .footer__social img {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-right: 2.5rem; }
+  .footer__copyright {
+    font-size: 1.8rem; }
+
 .homepage-main {
   height: 100vh;
   position: relative; }
