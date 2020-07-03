@@ -37,6 +37,9 @@ body {
 
 .product-card {
   border: 1px solid rgba(0, 0, 0, 0.13); }
+  .product-card--shadow {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border: none; }
   .product-card__img {
     height: 20rem; }
     .product-card__img img {
@@ -438,3 +441,146 @@ body {
     margin-bottom: 4rem; }
   .eshop-landing__heading {
     width: 55%; }
+
+.eshop-shop {
+  padding: 5rem 0; }
+  .eshop-shop__wrapper {
+    display: flex; }
+    .eshop-shop__wrapper--top {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4rem; }
+  .eshop-shop__search {
+    position: relative;
+    flex: 0 0 30%; }
+    .eshop-shop__search input {
+      font-size: 1.8rem;
+      width: 100%;
+      height: 6rem;
+      padding: 0 2rem;
+      border: 1px solid #868686; }
+    .eshop-shop__search img {
+      position: absolute;
+      right: 3rem;
+      top: 50%;
+      transform: translateY(-50%); }
+  .eshop-shop__breadcrumb {
+    font-size: 2rem;
+    color: #2f2e2e; }
+  .eshop-shop__nav {
+    flex: 0 0 30%; }
+  .eshop-shop__btn {
+    width: 100%;
+    height: 6.5rem;
+    background-color: #5dbeff;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: start;
+    padding: 0 3.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    .eshop-shop__btn:focus {
+      outline: none; }
+    .eshop-shop__btn img {
+      margin-left: auto; }
+  .eshop-shop__list {
+    list-style: none; }
+  .eshop-shop__item {
+    height: 6.5rem;
+    background-color: #faf8f8;
+    border: 1px solid #cacaca;
+    padding: 0 3.5rem;
+    display: flex;
+    align-items: center; }
+  .eshop-shop__link:link, .eshop-shop__link:visited {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .eshop-shop__products-window {
+    padding-left: 3rem; }
+  .eshop-shop__products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-bottom: 7rem; }
+  .eshop-shop__pagination .page-item.active .page-link {
+    background-color: unset;
+    color: #0677fb; }
+  .eshop-shop__pagination .page-link {
+    border: none;
+    font-size: 2.2rem;
+    color: #969696;
+    padding: 0 2.5rem; }
+    .eshop-shop__pagination .page-link:focus {
+      box-shadow: none; }
+    .eshop-shop__pagination .page-link:hover {
+      color: #808080;
+      background-color: unset; }
+    .eshop-shop__pagination .page-link--prev span {
+      margin-right: 1rem; }
+    .eshop-shop__pagination .page-link--next span {
+      margin-left: 1rem; }
+
+.custom-checkbox {
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */ }
+  .custom-checkbox .container {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 0; }
+  .custom-checkbox .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #fff;
+    border: 1px solid #2737c4;
+    border-radius: 3px; }
+  .custom-checkbox .container:hover input ~ .checkmark {
+    background-color: #ebf4ff; }
+  .custom-checkbox .container input:checked ~ .checkmark {
+    background-color: #ebf4ff; }
+  .custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .custom-checkbox .container input:checked ~ .checkmark:after {
+    display: block; }
+  .custom-checkbox .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #2737c4;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
