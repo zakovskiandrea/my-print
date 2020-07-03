@@ -1,16 +1,16 @@
-var swiper = new Swiper(".swiper-container--homepage", {
-  slidesPerView: 1,
-  // loop: true,
-  direction: "vertical",
-  autoplay: {
-    delay: 5000,
-  },
-  speed: 1000,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: false,
-  },
-});
+// var swiper = new Swiper(".swiper-container--homepage", {
+//   slidesPerView: 1,
+//   // loop: true,
+//   direction: "vertical",
+//   autoplay: {
+//     delay: 5000,
+//   },
+//   speed: 1000,
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     hide: false,
+//   },
+// });
 
 var swiper = new Swiper(".swiper-container--eshop", {
   loop: true,
@@ -67,4 +67,15 @@ $(document).ready(function () {
         .removeClass("fa-minus")
         .addClass("fa-plus");
     });
+
+  $(".input-number-box .minus").click(() => {
+    let currentNum = $(".input-number-box input").val() * 1;
+    if (currentNum === 1) return;
+    $(".input-number-box input").val(currentNum - 1);
+  });
+
+  $(".input-number-box .plus").click(() => {
+    let currentNum = $(".input-number-box input").val() * 1;
+    $(".input-number-box input").val(currentNum + 1);
+  });
 });

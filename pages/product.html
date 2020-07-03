@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>My Print</title>
+    <script src="https://kit.fontawesome.com/6a7797a227.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header header--white">
+        <div class="header__logo-box">
+            <img class="header__logo" src="../images/logo.svg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="./homepage.html" class="header__link">Почетна</a></li>
+                <li class="header__item"><a href="#" class="header__link">Регистрација</a></li>
+                <li class="header__item"><a href="#" class="header__link">Мои Нарачки</a></li>
+                <li class="header__item"><a href="#" class="header__link"><img src="../images/bag-icon.svg"
+                            alt="bag"></a></li>
+                <li class="header__item"><a href="#" class="header__link"><img src="../images/profile-icon.svg"
+                            alt="profile"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <section class="product-info">
+        <div class="u-wrapper">
+            <div class="product-info__breadcrumbs">Е- Продавница / Специјална понуда / Подароци / Име на производ </div>
+            <div class="product-info__product-content product">
+                <div class="product__img"><img src="../images/product-1.png" alt="bag"></div>
+                <div class="product__details">
+                    <h2 class="product__heading heading-2">Lorem ipsum dolor</h2>
+                    <h4 class="product__label heading-4 heading-4--blue-dark">Опис На Производ</h4>
+                    <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="product__inputs-box">
+                        <div class="select-dropdown-box">
+                            <img src="../images/dropdown-icon.png" alt="dropdown">
+                            <select>
+                                <option disabled selected>Димензии:</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                        <div class="input-number-box">
+                            <button class="minus"><img src="../images/minus-icon.svg" alt="minus"></button>
+                            <input value="1" type="number" class="input">
+                            <button class="plus"><img src="../images/plus-icon.svg" alt="plus"></button>
+                        </div>
+                    </div>
+                    <p class="product__price">Цена: 1.109 ден.</p>
+                    <a href="" class="product__btn btn-second btn-second--blue"><img src="../images/bag-white-icon.svg"
+                            alt="bag" />Додади во кошничка </a>
+                </div>
+            </div>
+            <div class="product-info__instructions instructions">
+                <h5 class="instructions__heading">Инструкции за подготовка и печатење на фајл</h5>
+                <div class="instructions__text">
+                    <p>За печатење на широк формат, најдобрата резолуција за фајловите во сооднос 1:1 е 150 dpi.</p>
+                    <p>Испратете ни PDF, JPEG или TIFF фајл.</p>
+                </div>
+            </div>
+            <div class="product-info__description">
+                <h2 class="product-info__description__heading heading-2">Lorem ipsum dolor</h2>
+                <p class="product-info__description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION SIMILAR-PRODUCTS -->
+    <section class="similar-products">
+        <div class="similar-products__wrapper">
+            <h4 class="similar-products__label heading-4 heading-4--blue-dark">Слични Производи</h4>
+            <h2 class="similar-products__heading heading-2">Може да ве интересираат и следниве производи:
+            </h2>
+        </div>
+        <div class="similar-products__slider-box">
+            <img class="arrow arrow--prev" src="../images/prev.svg" alt="previous arrow" />
+            <img class="arrow arrow--next" src="../images/next.svg" alt="next arrow" />
+            <div class="swiper-container swiper-container--similar-products">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__img"><img src="../images/product-1.png" alt="product image"></div>
+                            <div class="product-card__content">
+                                <h5 class="product-card__heading heading-5">Lorem ipsum dolor</h5>
+                                <p class="product-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore.</p>
+                                <div class="product-card__details">
+                                    <div class="product-card__price"><span>Цена:</span>1.750MKD</div>
+
+                                    <img src="../images/bag-icon.svg" alt="bag" class="product-card__icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__img"><img src="../images/product-2.png" alt="product image"></div>
+                            <div class="product-card__content">
+                                <h5 class="product-card__heading heading-5">Lorem ipsum dolor</h5>
+                                <p class="product-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore.</p>
+                                <div class="product-card__details">
+                                    <div class="product-card__price"><span>Цена:</span>1.750MKD</div>
+
+                                    <img src="../images/bag-icon.svg" alt="bag" class="product-card__icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__img"><img src="../images/product-3.png" alt="product image"></div>
+                            <div class="product-card__content">
+                                <h5 class="product-card__heading heading-5">Lorem ipsum dolor</h5>
+                                <p class="product-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore.</p>
+                                <div class="product-card__details">
+                                    <div class="product-card__price"><span>Цена:</span>1.750MKD</div>
+
+                                    <img src="../images/bag-icon.svg" alt="bag" class="product-card__icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__img"><img src="../images/product-4.png" alt="product image"></div>
+                            <div class="product-card__content">
+                                <h5 class="product-card__heading heading-5">Lorem ipsum dolor</h5>
+                                <p class="product-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore.</p>
+                                <div class="product-card__details">
+                                    <div class="product-card__price"><span>Цена:</span>1.750MKD</div>
+
+                                    <img src="../images/bag-icon.svg" alt="bag" class="product-card__icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__img"><img src="../images/product-2.png" alt="product image"></div>
+                            <div class="product-card__content">
+                                <h5 class="product-card__heading heading-5">Lorem ipsum dolor</h5>
+                                <p class="product-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore.</p>
+                                <div class="product-card__details">
+                                    <div class="product-card__price"><span>Цена:</span>1.750MKD</div>
+
+                                    <img src="../images/bag-icon.svg" alt="bag" class="product-card__icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION SIMILAR-PRODUCTS END -->
+    <!-- SECTION CONTACT-->
+    <section class="contact">
+        <div class="u-wrapper">
+            <div class="contact__content">
+                <h4 class="contact__label heading-4">Контакт</h4>
+                <p class="contact__text">Vestibulum hendrerit egestas finibus. Nulla facilisi. Nullam eleifend leo et
+                    ante
+                    faucibus, non auctor elit maximus. Pellentesque ullamcorper lacus sed porta finibus. Suspendisse vel
+                    ligula id massa vehicula gravida laoreet nisi. Donec a ipsum felis. </p>
+                <ul class="contact__list">
+                    <li class="contact__item"><img src="../images/pin-icon.svg" alt="pin" /> Љубљанска 5, Скопје</li>
+                    <li class="contact__item"><img src="../images/mail-icon.svg" alt="mail" /> info@myprint.com.mk</li>
+                    <li class="contact__item"><img src="../images/phone-icon.svg" alt="phone" />+389(0)2 30 99 017</li>
+                </ul>
+            </div>
+            <div class="contact__map-box"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.6653506405805!2d21.38878465101154!3d42.007457065186166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135414703b3e1e13%3A0x79cb85411a95a587!2sLjubljanska%205%2C%20Skopje%201000!5e0!3m2!1sen!2smk!4v1593678252260!5m2!1sen!2smk"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe></div>
+        </div>
+    </section>
+    <!-- SECTION CONTACT END-->
+    <!-- SECTION FOOTER-->
+    <footer class="footer">
+        <div class="u-wrapper">
+            <div class="footer__socials">
+                <div class="footer__social"><img src="../images/fb-icon.svg" alt="facebook" />Facebook</div>
+                <div class="footer__social"><img src="../images/insta-icon.svg" alt="instagram" />Instagram</div>
+            </div>
+            <p class="footer__copyright">My Print - All Rights Reserved | Мај Принт - Сите права задржани</p>
+        </div>
+    </footer>
+    <!-- SECTION FOOTER END-->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>
