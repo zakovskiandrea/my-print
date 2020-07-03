@@ -1,0 +1,40 @@
+.similar-products {
+  padding: 12rem 0;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    margin-left: 10%;
+  }
+  &__label {
+    margin-bottom: 4rem;
+  }
+  &__heading {
+    margin-bottom: 7rem;
+    width: 70%;
+  }
+
+  &__slider-box {
+    width: 100%;
+    height: 46rem;
+    padding: 0 20rem;
+    position: relative;
+    margin-bottom: 7rem;
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      outline: none;
+
+      &--prev {
+        left: 5%;
+      }
+      &--next {
+        right: 5%;
+      }
+    }
+  }
+}

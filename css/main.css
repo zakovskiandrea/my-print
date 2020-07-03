@@ -11,7 +11,7 @@ html {
 body {
   box-sizing: border-box; }
 
-.btn-primary:link, .btn-primary:visited {
+.btn-main:link, .btn-main:visited {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -21,7 +21,7 @@ body {
   border: 1px solid #bf2459;
   border-radius: 50px; }
 
-.btn-secondary:link, .btn-secondary:visited {
+.btn-second:link, .btn-second:visited {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -29,10 +29,10 @@ body {
   color: #fff;
   padding: 2rem 4.5rem; }
 
-.btn-secondary--blue {
+.btn-second--blue {
   background-color: #18a0fb; }
 
-.btn-secondary--blue-dark {
+.btn-second--blue-dark {
   background-color: #2737c4; }
 
 .product-card {
@@ -99,6 +99,8 @@ body {
   color: #bf2459; }
   .heading-4--blue {
     color: #5dbeff; }
+  .heading-4--blue-dark {
+    color: #2737c4; }
 
 .u-wrapper {
   width: 80%;
@@ -213,6 +215,35 @@ body {
       margin-right: 2.5rem; }
   .footer__copyright {
     font-size: 1.8rem; }
+
+.similar-products {
+  padding: 12rem 0;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column; }
+  .similar-products__wrapper {
+    margin-left: 10%; }
+  .similar-products__label {
+    margin-bottom: 4rem; }
+  .similar-products__heading {
+    margin-bottom: 7rem;
+    width: 70%; }
+  .similar-products__slider-box {
+    width: 100%;
+    height: 46rem;
+    padding: 0 20rem;
+    position: relative;
+    margin-bottom: 7rem; }
+    .similar-products__slider-box .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      outline: none; }
+      .similar-products__slider-box .arrow--prev {
+        left: 5%; }
+      .similar-products__slider-box .arrow--next {
+        right: 5%; }
 
 .homepage-main {
   height: 100vh;
