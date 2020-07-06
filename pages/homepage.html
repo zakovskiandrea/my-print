@@ -9,8 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>My Print</title>
 </head>
@@ -33,6 +32,32 @@
         </nav>
     </header>
     <!-- HEADER END -->
+    <!-- HEADER MOBILE -->
+    <header class="header header-phone">
+        <div class="header__logo-box header-phone__logo-box">
+            <img class="header__logo header-phone__logo" src="../images/logo.svg" alt="logo" />
+        </div>
+        <div class="header-phone__dropdown">
+            <div class="header-phone__dropbtn"><img src="../images/hamburger-icon.svg" alt="button" /></div>
+            <div class="header-phone__dropdown-content">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./homepage.html" class="header__link">Почетна</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">За Нас</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">Услуги</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link ">Производи</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Бодич На Дизајнери</a>
+                    </li>
+                    <li class="header__item header__item--blue"><a href="./e-shop.html"
+                            class="header__link">Е-Продавница</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER-MOBILE END -->
     <!-- SECTION MAIN -->
     <section class="homepage-main">
         <div class="homepage-main__slider-box">
@@ -115,24 +140,6 @@
                 </div>
                 <div class="service-card">
                     <div class="service-card__img">
-                        <img src="../images/graphic-design.svg" alt="service icon">
-                    </div>
-                    <h5 class="service-card__heading">Доработки</h5>
-                    <p class="service-card__text">Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor.</p>
-                    <a href="" class="service-card__btn">Дознај Повеќе <i></i></a>
-                </div>
-                <div class="service-card">
-                    <div class="service-card__img">
-                        <img src="../images/cutter-knife.svg" alt="service icon">
-                    </div>
-                    <h5 class="service-card__heading">Катирање</h5>
-                    <p class="service-card__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-                    <a href="" class="service-card__btn">Дознај Повеќе <i></i></a>
-                </div>
-                <div class="service-card">
-                    <div class="service-card__img">
                         <img src="../images/project-2.svg" alt="service icon">
                     </div>
                     <h5 class="service-card__heading">Монтажа</h5>
@@ -149,14 +156,61 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
                     <a href="" class="service-card__btn">Дознај Повеќе <i></i></a>
                 </div>
-
+                <div class="service-card">
+                    <div class="service-card__img">
+                        <img src="../images/cutter-knife.svg" alt="service icon">
+                    </div>
+                    <h5 class="service-card__heading">Катирање</h5>
+                    <p class="service-card__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__img">
+                        <img src="../images/graphic-design.svg" alt="service icon">
+                    </div>
+                    <h5 class="service-card__heading">Доработки</h5>
+                    <p class="service-card__text">Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor.</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- SECTION SERVICES END -->
     <!-- SECTION BRANDING -->
     <section class="homepage-branding">
-
+        <!-- <div class="homepage-branding__img"><img src="../images/billboard.png" alt="billboard"></div>
+        <div class="homepage-branding__content">
+            <h4 class="homepage-branding__label heading-4 heading-4--blue">Производи</h4>
+            <div class="homepage-branding__container" id="section1">
+                <h2 class="branding__heading">Надворешно Брендирање</h2>
+                <p class="branding__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper eros
+                    ac lacus dignissim accumsan. Vestibulum rutrum commodo ligula sit amet feugiat In venenatis ligula
+                    sit amet.</p>
+                <a href="" class="branding__btn btn-second btn-second--red">Дознај Повеќе</a>
+            </div>
+            <nav class="homepage-branding__nav" id="myScrollspy">
+                <ul class="homepage-branding__list">
+                    <li class="homepage-branding__item">
+                        <a href="#section1" class="homepage-branding__link">Надворешно Брендирање</a>
+                    </li>
+                    <li class="homepage-branding__item">
+                        <a href="" class="homepage-branding__link">Внатрешно Брендирање</a>
+                    </li>
+                    <li class="homepage-branding__item">
+                        <a href="" class="homepage-branding__link">Брендирање На Возила</a>
+                    </li>
+                    <li class="homepage-branding__item">
+                        <a href="" class="homepage-branding__link">Промо Медиа</a>
+                    </li>
+                    <li class="homepage-branding__item">
+                        <a href="" class="homepage-branding__link">Фотографии И Репродукција</a>
+                    </li>
+                    <li class="homepage-branding__item">
+                        <a href="" class="homepage-branding__link">Маркетинг И Промоции</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> -->
     </section>
     <!-- SECTION BRANDING END -->
     <!-- SECTION ABOUT -->
@@ -167,6 +221,7 @@
             ante faucibus, non auctor elit maximus. Pellentesque ullamcorper lacus sed porta finibus. Suspendisse vel
             ligula id massa vehicula imperdiet ut at enim. Nam lectus ante, commodo non vestibulum dignissim.</p>
         <a href="#" class="homepage-about__btn btn-second btn-second--blue-dark">Дознај Повеќе</a>
+
     </section>
     <!-- SECTION ABOUT END-->
     <!-- SECTION PRODUCTS-->
@@ -293,12 +348,14 @@
                 <div class="footer__social"><img src="../images/fb-icon.svg" alt="facebook" />Facebook</div>
                 <div class="footer__social"><img src="../images/insta-icon.svg" alt="instagram" />Instagram</div>
             </div>
+            <div class="footer__socials footer__socials--black">
+                <div class="footer__social"><img src="../images/fb-icon-white.svg" alt="facebook" /></div>
+                <div class="footer__social"><img src="../images/insta-icon-white.svg" alt="instagram" /></div>
+            </div>
             <p class="footer__copyright">My Print - All Rights Reserved | Мај Принт - Сите права задржани</p>
         </div>
     </footer>
-    <!-- SECTION FOOTER END-->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"

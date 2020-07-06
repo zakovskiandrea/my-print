@@ -1,12 +1,33 @@
 .footer {
   padding: 2rem 0;
+  @include for-phone {
+    background-color: #000;
+    color: #fff;
+  }
   .u-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include for-desktop {
+      flex-direction: column;
+    }
   }
   &__socials {
     display: flex;
+    @include for-desktop {
+      margin-bottom: 1.5rem;
+    }
+    @include for-phone {
+      display: none;
+    }
+
+    &--black {
+      display: none;
+      @include for-phone {
+        align-self: flex-start;
+        display: flex;
+      }
+    }
   }
 
   &__social {
@@ -17,6 +38,9 @@
 
     &:not(:last-child) {
       margin-right: 6rem;
+      @include for-phone {
+        margin-right: 1rem;
+      }
     }
     img {
       height: 3.5rem;

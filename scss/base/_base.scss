@@ -8,6 +8,12 @@
 
 html {
   font-size: 62.5%;
+  @include for-desktop-xxl {
+    font-size: 58%;
+  }
+  @include for-desktop-xl {
+    font-size: 52%;
+  }
 }
 
 body {

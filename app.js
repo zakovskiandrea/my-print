@@ -14,8 +14,15 @@
 
 var swiper = new Swiper(".swiper-container--eshop", {
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView:
+    window.innerWidth < 769
+      ? 1.5
+      : window.innerWidth < 992
+      ? 2
+      : window.innerWidth < 1441
+      ? 3
+      : 4,
+  spaceBetween: window.innerWidth < 1199 ? 15 : 30,
   navigation: {
     nextEl: ".homepage-eshop__slider-box .arrow--next",
     prevEl: ".homepage-eshop__slider-box .arrow--prev",
@@ -24,8 +31,15 @@ var swiper = new Swiper(".swiper-container--eshop", {
 
 var swiper = new Swiper(".swiper-container--products", {
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView:
+    window.innerWidth < 769
+      ? 1.5
+      : window.innerWidth < 992
+      ? 2
+      : window.innerWidth < 1441
+      ? 3
+      : 4,
+  spaceBetween: window.innerWidth < 1199 ? 15 : 30,
   navigation: {
     nextEl: ".homepage-products__slider-box .arrow--next",
     prevEl: ".homepage-products__slider-box .arrow--prev",
@@ -34,8 +48,8 @@ var swiper = new Swiper(".swiper-container--products", {
 
 var swiper = new Swiper(".swiper-container--similar-products", {
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: window.innerWidth < 1441 ? 3 : 4,
+  spaceBetween: window.innerWidth < 1199 ? 15 : 30,
   navigation: {
     nextEl: ".similar-products__slider-box .arrow--next",
     prevEl: ".similar-products__slider-box .arrow--prev",
@@ -78,4 +92,14 @@ $(document).ready(function () {
     let currentNum = $(".input-number-box input").val() * 1;
     $(".input-number-box input").val(currentNum + 1);
   });
+});
+
+$(".header-phone__dropbtn").click((e) => {
+  console.log("hi");
+  $(".header-phone__dropdown-content").toggleClass("show");
+  e.stopPropagation();
+});
+
+$(document).click(function () {
+  $(".header-phone__dropdown-content").removeClass("show");
 });

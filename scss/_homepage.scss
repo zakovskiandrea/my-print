@@ -14,6 +14,13 @@
     right: 10rem;
     transform: translateY(-50%);
     z-index: 10;
+    @include for-desktop-xl {
+      right: 5rem;
+    }
+
+    @include for-tablet {
+      display: none;
+    }
 
     .icon {
       cursor: pointer;
@@ -64,6 +71,9 @@
 .slide-content {
   width: 40%;
   margin-left: 10%;
+  @include for-tablet {
+    width: 100%;
+  }
   &__label {
     font-size: 1.8rem;
     color: #2f2e2e;
@@ -71,11 +81,20 @@
   }
   &__heading {
     margin-bottom: 4rem;
+    @include for-desktop {
+      font-size: 6rem;
+      line-height: 7rem;
+    }
+
+    @include for-desktop {
+      font-size: 4.5rem;
+      line-height: 5rem;
+    }
   }
   &__text {
     font-size: 2.4rem;
     color: #000;
-    line-height: 40px;
+    line-height: 4rem;
     letter-spacing: -0.015em;
     margin-bottom: 6rem;
   }
@@ -87,14 +106,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include for-tablet {
+    padding: 6rem 0;
+  }
+  @include for-phone {
+    align-items: flex-start;
+  }
 
   &__label {
     margin-bottom: 4rem;
+    @include for-phone {
+      padding: 0 10%;
+    }
   }
   &__heading {
     margin-bottom: 8rem;
     width: 70%;
     text-align: center;
+    @include for-phone {
+      width: 100%;
+      text-align: start;
+      padding: 0 10%;
+    }
   }
   &__slider-box {
     width: 100%;
@@ -102,6 +135,13 @@
     padding: 0 20rem;
     position: relative;
     margin-bottom: 7rem;
+    @include for-desktop {
+      height: 40rem;
+      padding: 0 15rem;
+    }
+    @include for-tablet {
+      padding: 0;
+    }
 
     .arrow {
       position: absolute;
@@ -109,6 +149,9 @@
       transform: translateY(-50%);
       cursor: pointer;
       outline: none;
+      @include for-tablet {
+        display: none;
+      }
 
       &--prev {
         left: 5%;
@@ -117,6 +160,10 @@
         right: 5%;
       }
     }
+  }
+
+  &__btn {
+    align-self: center;
   }
 }
 
@@ -133,42 +180,68 @@
 }
 
 .slide-card {
-  padding: 6rem 0;
-  padding-left: 4rem;
+  // padding: 3rem 0;
+  padding: 0 2rem;
   background-color: #2737c4;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   &__label {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #fff;
     letter-spacing: 0.1em;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
   }
   &__heading {
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
   &__text {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: #fff;
-    line-height: 3.6rem;
-    margin-bottom: 4rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+  }
+  &__btn {
+    align-self: flex-start;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    &:link,
+    &:visited {
+      padding: 2rem 3rem;
+    }
   }
 }
 
 .homepage-services {
   padding: 13rem 0;
+  @include for-tablet {
+    padding: 6rem 0;
+  }
   &__label {
     margin-bottom: 4rem;
   }
   &__heading {
     width: 80%;
     margin-bottom: 5rem;
+    @include for-phone {
+      width: 100%;
+    }
   }
   &__cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 4rem;
     row-gap: 6rem;
+    @include for-laptop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include for-phone {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -182,6 +255,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+    @include for-phone {
+      margin-bottom: 3rem;
+    }
 
     img {
       width: 5.5rem;
@@ -217,7 +293,65 @@
   }
 }
 
-////////////
+.homepage-branding {
+  height: calc(100vh - 10rem);
+  display: flex;
+  &__img {
+    flex: 0 0 50%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    flex: 0 0 50%;
+    padding: 5rem 8rem;
+    background-color: #2737c4;
+  }
+  &__label {
+    margin-bottom: 4rem;
+  }
+  &__container {
+    margin-bottom: 6rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+}
+
+.branding {
+  &__heading {
+    font-size: 6rem;
+    line-height: 6rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    color: #fff;
+    margin-bottom: 4rem;
+  }
+  &__btn {
+  }
+}
 
 .homepage-about {
   padding: 12rem 0;
@@ -226,6 +360,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include for-tablet {
+    padding: 6rem 0;
+    padding-left: 10%;
+  }
+  @include for-phone {
+    background-image: none;
+    background-color: rgb(255, 242, 89);
+    padding-right: 10%;
+  }
   &__label {
     margin-bottom: 4rem;
   }
@@ -239,6 +383,12 @@
     color: rgba(4, 4, 4, 0.8);
     margin-bottom: 8rem;
     width: 40%;
+    @include for-tablet {
+      width: 50%;
+    }
+    @include for-phone {
+      width: 100%;
+    }
   }
 }
 
@@ -248,8 +398,15 @@
   display: flex;
   flex-direction: column;
 
+  @include for-tablet {
+    padding: 6rem 0;
+  }
+
   &__wrapper {
     margin-left: 10%;
+    @include for-phone {
+      margin-right: 10%;
+    }
   }
   &__label {
     margin-bottom: 4rem;
@@ -257,6 +414,9 @@
   &__heading {
     margin-bottom: 3rem;
     width: 70%;
+    @include for-tablet {
+      width: 100%;
+    }
   }
   &__text {
     font-size: 2.4rem;
@@ -265,10 +425,16 @@
   }
   &__slider-box {
     width: 100%;
-    height: 46rem;
+    min-height: 46rem;
     padding: 0 20rem;
     position: relative;
     margin-bottom: 7rem;
+    @include for-desktop {
+      padding: 0 15rem;
+    }
+    @include for-tablet {
+      padding: 0;
+    }
 
     .arrow {
       position: absolute;
@@ -276,6 +442,9 @@
       transform: translateY(-50%);
       cursor: pointer;
       outline: none;
+      @include for-tablet {
+        display: none;
+      }
 
       &--prev {
         left: 5%;

@@ -9,6 +9,16 @@
     padding: 2rem 5.5rem;
     border: 1px solid #bf2459;
     border-radius: 50px;
+    transition: all 0.2s ease-out;
+    @include for-tablet {
+      background-color: #bf2459;
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    background-color: #bf2459;
+    color: #fff;
   }
 }
 
@@ -28,6 +38,10 @@
 
   &--blue-dark {
     background-color: #2737c4;
+  }
+
+  &--red {
+    background-color: #c4275d;
   }
 }
 

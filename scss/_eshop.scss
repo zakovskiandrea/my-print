@@ -108,6 +108,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     margin-bottom: 7rem;
+    @include for-desktop-xl {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   &__pagination {
     .page-item.active {
