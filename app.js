@@ -48,7 +48,14 @@ var swiper = new Swiper(".swiper-container--products", {
 
 var swiper = new Swiper(".swiper-container--similar-products", {
   loop: true,
-  slidesPerView: window.innerWidth < 1441 ? 3 : 4,
+  slidesPerView:
+    window.innerWidth < 769
+      ? 1.5
+      : window.innerWidth < 992
+      ? 2
+      : window.innerWidth < 1441
+      ? 3
+      : 4,
   spaceBetween: window.innerWidth < 1199 ? 15 : 30,
   navigation: {
     nextEl: ".similar-products__slider-box .arrow--next",
