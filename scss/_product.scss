@@ -1,19 +1,37 @@
 .product-info {
   padding-top: 16rem;
   padding-bottom: 8rem;
+  @include for-tablet {
+    padding-bottom: 3rem;
+  }
   &__breadcrumbs {
     font-size: 2rem;
     margin-bottom: 6rem;
+
+    @include for-tablet {
+      display: none;
+    }
   }
   &__product-content {
     display: flex;
     padding-bottom: 8rem;
+    @include for-tablet {
+      flex-direction: column;
+      padding-bottom: 3rem;
+    }
   }
   &__instructions {
     padding-bottom: 8rem;
+    @include for-tablet {
+      padding-bottom: 3rem;
+    }
   }
   &__description {
     margin-left: 6rem;
+
+    @include for-tablet {
+      margin-left: 0;
+    }
     &__heading {
       font-weight: bold;
     }
@@ -22,6 +40,11 @@
       font-size: 2.4rem;
       line-height: 5rem;
       color: rgba(0, 0, 0, 0.8);
+
+      @include for-phone {
+        font-size: 2.2rem;
+        line-height: 4rem;
+      }
     }
   }
 }
@@ -29,10 +52,27 @@
 .product {
   &__img {
     flex: 1;
+    @include for-tablet {
+      margin-bottom: 4rem;
+    }
     img {
       height: 100%;
       width: 90%;
       object-fit: cover;
+
+      @include for-desktop {
+        height: 80%;
+        width: 95%;
+      }
+
+      @include for-laptop {
+        height: 60%;
+        width: 95%;
+      }
+
+      @include for-tablet {
+        width: 100%;
+      }
     }
   }
   &__details {
@@ -54,6 +94,13 @@
   &__inputs-box {
     margin-bottom: 3rem;
     display: flex;
+
+    @include for-laptop {
+      justify-content: space-between;
+    }
+    @include for-tablet {
+      flex-direction: column;
+    }
   }
   &__price {
     font-size: 3rem;
@@ -67,6 +114,12 @@
       display: inline-flex;
       align-items: center;
       font-family: "Montserrat", sans-serif;
+
+      @include for-phone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
     }
 
     img {
@@ -93,6 +146,20 @@
 .select-dropdown-box {
   flex: 0 0 50%;
   position: relative;
+
+  @include for-laptop {
+    flex: unset;
+    min-width: 20rem;
+  }
+
+  @include for-tablet {
+    margin-bottom: 2rem;
+    width: 20rem;
+  }
+
+  @include for-phone {
+    width: 100%;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -113,6 +180,10 @@
     border: 1px solid #cacaca;
     outline: none;
     cursor: pointer;
+
+    @include for-laptop {
+      min-width: 17rem;
+    }
   }
 
   img {
@@ -128,6 +199,10 @@
 .input-number-box {
   margin-left: 8.5rem;
   display: flex;
+
+  @include for-laptop {
+    margin-left: 0;
+  }
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
