@@ -89,3 +89,33 @@
     }
   }
 }
+
+.installing-usage {
+  background-color: #2737c4;
+  padding: 12rem 0;
+  .u-wrapper {
+  }
+  &__heading {
+    font-weight: bold;
+    margin-bottom: 4rem;
+  }
+  &__heading-secondary {
+    margin-bottom: 6rem;
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  &__item {
+    font-size: 2.6rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    img {
+      margin-right: 3rem;
+    }
+  }
+}

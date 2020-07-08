@@ -1195,3 +1195,24 @@ body {
   line-height: 4rem; }
   .why-card__text:not(:last-child) {
     margin-bottom: 2rem; }
+
+.installing-usage {
+  background-color: #2737c4;
+  padding: 12rem 0; }
+  .installing-usage__heading {
+    font-weight: bold;
+    margin-bottom: 4rem; }
+  .installing-usage__heading-secondary {
+    margin-bottom: 6rem; }
+  .installing-usage__lists {
+    display: flex;
+    justify-content: space-between; }
+  .installing-usage__list {
+    list-style: none;
+    margin-bottom: 0; }
+  .installing-usage__item {
+    font-size: 2.6rem;
+    color: #fff;
+    margin-bottom: 3rem; }
+    .installing-usage__item img {
+      margin-right: 3rem; }
