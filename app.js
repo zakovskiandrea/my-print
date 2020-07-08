@@ -63,6 +63,23 @@ var swiper = new Swiper(".swiper-container--similar-products", {
   },
 });
 
+var swiper = new Swiper(".swiper-container--installing", {
+  loop: true,
+  slidesPerView: 3,
+  // window.innerWidth < 769
+  //   ? 1.5
+  //   : window.innerWidth < 992
+  //   ? 2
+  //   : window.innerWidth < 1441
+  //   ? 3
+  //   : 4,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".installing-slider .arrow--next",
+    prevEl: ".installing-slider .arrow--prev",
+  },
+});
+
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 50) {
     $(".header").addClass("header--active");

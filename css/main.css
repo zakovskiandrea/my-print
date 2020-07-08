@@ -1216,3 +1216,34 @@ body {
     margin-bottom: 3rem; }
     .installing-usage__item img {
       margin-right: 3rem; }
+
+.installing-slider {
+  position: relative;
+  height: 45rem; }
+  .installing-slider .swiper-container {
+    height: 100%; }
+  .installing-slider .swiper-wrapper {
+    height: 100%; }
+  .installing-slider .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .installing-slider .arrow {
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .installing-slider .arrow:focus {
+      outline: none; }
+    .installing-slider .arrow--next {
+      right: 4rem; }
+    .installing-slider .arrow--prev {
+      left: 4rem; }
