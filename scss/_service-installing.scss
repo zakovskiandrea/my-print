@@ -1,0 +1,91 @@
+.installing-landing {
+  height: 70rem;
+  padding-top: 26rem;
+  background-image: url("../images/bckg-installing.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  &__label {
+    margin-bottom: 4rem;
+  }
+  &__heading {
+    width: 55%;
+    font-weight: bold;
+    @include for-laptop {
+      width: 100%;
+    }
+  }
+}
+
+.installing-about {
+  padding: 12rem 0;
+
+  &__what {
+    display: flex;
+  }
+  &__why {
+  }
+}
+
+.what {
+  margin-bottom: 10rem;
+  &__img {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    img {
+      width: 20rem;
+    }
+  }
+  &__content {
+    flex: 0 0 80%;
+    padding-left: 8rem;
+  }
+  &__heading {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    font-size: 3rem;
+  }
+}
+
+.why {
+  &__heading {
+    font-weight: bold;
+    margin-bottom: 6rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10rem;
+  }
+}
+
+.why-card {
+  &__header {
+    height: 7rem;
+    background-color: #f4f5fe;
+    padding: 0 3.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    img {
+      margin-right: 4rem;
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}

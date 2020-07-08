@@ -108,6 +108,8 @@ body {
       line-height: 120%; } }
   .heading-2--white {
     color: #fff; }
+  .heading-2--blue {
+    color: #2737c4; }
 
 .heading-3 {
   font-size: 3.6rem;
@@ -1127,3 +1129,69 @@ body {
     border: none; }
     .input-number-box button:focus {
       outline: none; }
+
+.installing-landing {
+  height: 70rem;
+  padding-top: 26rem;
+  background-image: url("../images/bckg-installing.png");
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .installing-landing__label {
+    margin-bottom: 4rem; }
+  .installing-landing__heading {
+    width: 55%;
+    font-weight: bold; }
+    @media (max-width: 991px) {
+      .installing-landing__heading {
+        width: 100%; } }
+
+.installing-about {
+  padding: 12rem 0; }
+  .installing-about__what {
+    display: flex; }
+
+.what {
+  margin-bottom: 10rem; }
+  .what__img {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center; }
+    .what__img img {
+      width: 20rem; }
+  .what__content {
+    flex: 0 0 80%;
+    padding-left: 8rem; }
+  .what__heading {
+    font-weight: bold;
+    margin-bottom: 2rem; }
+  .what__text {
+    font-size: 3rem; }
+
+.why__heading {
+  font-weight: bold;
+  margin-bottom: 6rem; }
+
+.why__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10rem; }
+
+.why-card__header {
+  height: 7rem;
+  background-color: #f4f5fe;
+  padding: 0 3.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem; }
+  .why-card__header img {
+    margin-right: 4rem; }
+
+.why-card__heading {
+  font-size: 3rem;
+  font-weight: bold; }
+
+.why-card__text {
+  font-size: 2.4rem;
+  line-height: 4rem; }
+  .why-card__text:not(:last-child) {
+    margin-bottom: 2rem; }
