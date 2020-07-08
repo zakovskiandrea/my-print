@@ -114,6 +114,8 @@ body {
 .heading-3 {
   font-size: 3.6rem;
   color: #fff; }
+  .heading-3--black {
+    color: #000; }
 
 .heading-4 {
   font-size: 2rem;
@@ -1247,3 +1249,60 @@ body {
       right: 4rem; }
     .installing-slider .arrow--prev {
       left: 4rem; }
+
+.locations-landing {
+  height: 70rem;
+  padding-top: 26rem;
+  background-image: url("../images/bckg-locations.png");
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .locations-landing__label {
+    margin-bottom: 4rem; }
+  .locations-landing__heading {
+    width: 55%;
+    font-weight: bold; }
+    @media (max-width: 991px) {
+      .locations-landing__heading {
+        width: 100%; } }
+
+.locations-about {
+  padding: 12rem 0; }
+  .locations-about__what {
+    display: flex; }
+  .locations-about__label {
+    margin-bottom: 3rem; }
+  .locations-about__heading {
+    font-weight: bold;
+    margin-bottom: 3rem; }
+  .locations-about__card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 6rem; }
+
+.location-card {
+  border: 1px solid rgba(0, 0, 0, 0.13); }
+  .location-card__img {
+    height: 30rem; }
+    .location-card__img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .location-card__content {
+    padding: 3rem; }
+  .location-card__heading {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 2rem; }
+  .location-card__text {
+    font-size: 1.8rem; }
+  .location-card__dimensions {
+    display: flex;
+    color: #2737c4;
+    font-size: 1.8rem;
+    margin-top: 2rem; }
+    .location-card__dimensions img {
+      margin-right: 2rem; }
+    .location-card__dimensions span {
+      font-weight: bold;
+      margin-right: 2px; }
