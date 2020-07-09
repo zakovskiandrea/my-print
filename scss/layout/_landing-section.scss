@@ -20,6 +20,14 @@
       text-transform: uppercase;
     }
   }
+
+  &--designers-guide {
+    background-image: url("../../images/bckg-designersGuide.png");
+    .landing__heading {
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
   &__label {
     margin-bottom: 4rem;
   }

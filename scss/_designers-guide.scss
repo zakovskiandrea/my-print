@@ -1,0 +1,69 @@
+.designers-guide-main {
+  padding: 12rem 0;
+  &__desc {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    margin-bottom: 8rem;
+  }
+  &__preparations-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+    margin-bottom: 8rem;
+  }
+  &__important {
+    width: 100%;
+    .important__heading {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #343646;
+      text-transform: uppercase;
+      padding: 1.5rem 6rem;
+      margin-bottom: 0;
+    }
+    .important__text {
+      font-size: 2.4rem;
+      line-height: 4rem;
+      background-color: #f1f1f1;
+      padding: 3rem 6rem;
+    }
+  }
+}
+
+.preparation-card {
+  padding: 6rem 4rem;
+  &--blue {
+    position: relative;
+    border: dashed 4px #2737c4;
+    border-radius: 10px;
+    .preparation-card__heading {
+      color: #2737c4;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 10%;
+      transform: translateY(-50%);
+      height: 8rem;
+    }
+  }
+  &--red {
+    border: dashed 4px #eb3131;
+    border-radius: 10px;
+    .preparation-card__heading {
+      color: #eb3131;
+    }
+  }
+  &__heading {
+    font-size: 2.8rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}

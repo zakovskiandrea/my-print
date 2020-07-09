@@ -129,6 +129,8 @@ body {
     color: #2737c4; }
   .heading-4--black {
     color: #000; }
+  .heading-4--white {
+    color: #fff; }
 
 .u-wrapper {
   width: 80%;
@@ -405,6 +407,11 @@ body {
     background-position: right; }
     .landing--outside-branding .landing__heading {
       text-transform: uppercase; }
+  .landing--designers-guide {
+    background-image: url("../../images/bckg-designersGuide.png"); }
+    .landing--designers-guide .landing__heading {
+      text-transform: uppercase;
+      color: #fff; }
   .landing__label {
     margin-bottom: 4rem; }
   .landing__heading {
@@ -1372,3 +1379,58 @@ body {
     color: #fff;
     border: 1px solid #fff;
     padding: 1rem 3rem; }
+
+.designers-guide-main {
+  padding: 12rem 0; }
+  .designers-guide-main__desc {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    margin-bottom: 8rem; }
+  .designers-guide-main__preparations-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+    margin-bottom: 8rem; }
+  .designers-guide-main__important {
+    width: 100%; }
+    .designers-guide-main__important .important__heading {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #343646;
+      text-transform: uppercase;
+      padding: 1.5rem 6rem;
+      margin-bottom: 0; }
+    .designers-guide-main__important .important__text {
+      font-size: 2.4rem;
+      line-height: 4rem;
+      background-color: #f1f1f1;
+      padding: 3rem 6rem; }
+
+.preparation-card {
+  padding: 6rem 4rem; }
+  .preparation-card--blue {
+    position: relative;
+    border: dashed 4px #2737c4;
+    border-radius: 10px; }
+    .preparation-card--blue .preparation-card__heading {
+      color: #2737c4; }
+    .preparation-card--blue img {
+      position: absolute;
+      top: 0;
+      right: 10%;
+      transform: translateY(-50%);
+      height: 8rem; }
+  .preparation-card--red {
+    border: dashed 4px #eb3131;
+    border-radius: 10px; }
+    .preparation-card--red .preparation-card__heading {
+      color: #eb3131; }
+  .preparation-card__heading {
+    font-size: 2.8rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .preparation-card__text {
+    font-size: 2rem;
+    line-height: 4rem; }
