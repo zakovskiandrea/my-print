@@ -63,7 +63,7 @@ var swiper = new Swiper(".swiper-container--similar-products", {
   },
 });
 
-var swiper = new Swiper(".swiper-container--installing", {
+var swiper = new Swiper(".swiper-container--locations", {
   loop: true,
   slidesPerView: 3,
   // window.innerWidth < 769
@@ -75,8 +75,8 @@ var swiper = new Swiper(".swiper-container--installing", {
   //   : 4,
   spaceBetween: 0,
   navigation: {
-    nextEl: ".installing-slider .arrow--next",
-    prevEl: ".installing-slider .arrow--prev",
+    nextEl: ".locations-slider .arrow--next",
+    prevEl: ".locations-slider .arrow--prev",
   },
 });
 

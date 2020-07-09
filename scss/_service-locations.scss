@@ -1,21 +1,3 @@
-.locations-landing {
-  height: 70rem;
-  padding-top: 26rem;
-  background-image: url("../images/bckg-locations.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  &__label {
-    margin-bottom: 4rem;
-  }
-  &__heading {
-    width: 55%;
-    font-weight: bold;
-    @include for-laptop {
-      width: 100%;
-    }
-  }
-}
-
 .locations-about {
   padding: 12rem 0;
   &__what {

@@ -1,0 +1,26 @@
+.landing {
+  height: 70rem;
+  padding-top: 26rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  &--locations {
+    background-image: url("../images/bckg-locations.png");
+  }
+  &--installing {
+    background-image: url("../images/bckg-installing.png");
+  }
+  &--eshop {
+    background-image: url("../images/bckg-envelops.png");
+  }
+  &__label {
+    margin-bottom: 4rem;
+  }
+  &__heading {
+    width: 55%;
+    font-weight: bold;
+    @include for-laptop {
+      width: 100%;
+    }
+  }
+}

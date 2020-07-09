@@ -387,6 +387,57 @@ body {
       .similar-products__slider-box .arrow--next {
         right: 5%; }
 
+.landing {
+  height: 70rem;
+  padding-top: 26rem;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .landing--locations {
+    background-image: url("../images/bckg-locations.png"); }
+  .landing--installing {
+    background-image: url("../images/bckg-installing.png"); }
+  .landing--eshop {
+    background-image: url("../images/bckg-envelops.png"); }
+  .landing__label {
+    margin-bottom: 4rem; }
+  .landing__heading {
+    width: 55%;
+    font-weight: bold; }
+    @media (max-width: 991px) {
+      .landing__heading {
+        width: 100%; } }
+
+.locations-slider {
+  position: relative;
+  height: 45rem; }
+  .locations-slider .swiper-container {
+    height: 100%; }
+  .locations-slider .swiper-wrapper {
+    height: 100%; }
+  .locations-slider .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .locations-slider .arrow {
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .locations-slider .arrow:focus {
+      outline: none; }
+    .locations-slider .arrow--next {
+      right: 4rem; }
+    .locations-slider .arrow--prev {
+      left: 4rem; }
+
 .homepage-main {
   height: 100vh;
   position: relative; }
@@ -748,20 +799,6 @@ body {
         right: 5%; }
   .homepage-products__btn {
     align-self: center; }
-
-.eshop-landing {
-  height: 70rem;
-  padding-top: 26rem;
-  background-image: url("../images/bckg-envelops.png");
-  background-repeat: no-repeat;
-  background-position: bottom; }
-  .eshop-landing__label {
-    margin-bottom: 4rem; }
-  .eshop-landing__heading {
-    width: 55%; }
-    @media (max-width: 991px) {
-      .eshop-landing__heading {
-        width: 100%; } }
 
 .eshop-shop {
   padding: 5rem 0; }
@@ -1132,21 +1169,6 @@ body {
     .input-number-box button:focus {
       outline: none; }
 
-.installing-landing {
-  height: 70rem;
-  padding-top: 26rem;
-  background-image: url("../images/bckg-installing.png");
-  background-repeat: no-repeat;
-  background-position: bottom; }
-  .installing-landing__label {
-    margin-bottom: 4rem; }
-  .installing-landing__heading {
-    width: 55%;
-    font-weight: bold; }
-    @media (max-width: 991px) {
-      .installing-landing__heading {
-        width: 100%; } }
-
 .installing-about {
   padding: 12rem 0; }
   .installing-about__what {
@@ -1218,52 +1240,6 @@ body {
     margin-bottom: 3rem; }
     .installing-usage__item img {
       margin-right: 3rem; }
-
-.installing-slider {
-  position: relative;
-  height: 45rem; }
-  .installing-slider .swiper-container {
-    height: 100%; }
-  .installing-slider .swiper-wrapper {
-    height: 100%; }
-  .installing-slider .swiper-slide img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-  .installing-slider .arrow {
-    height: 6.5rem;
-    width: 6.5rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .installing-slider .arrow:focus {
-      outline: none; }
-    .installing-slider .arrow--next {
-      right: 4rem; }
-    .installing-slider .arrow--prev {
-      left: 4rem; }
-
-.locations-landing {
-  height: 70rem;
-  padding-top: 26rem;
-  background-image: url("../images/bckg-locations.png");
-  background-repeat: no-repeat;
-  background-position: bottom; }
-  .locations-landing__label {
-    margin-bottom: 4rem; }
-  .locations-landing__heading {
-    width: 55%;
-    font-weight: bold; }
-    @media (max-width: 991px) {
-      .locations-landing__heading {
-        width: 100%; } }
 
 .locations-about {
   padding: 12rem 0; }
