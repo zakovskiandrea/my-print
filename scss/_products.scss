@@ -1,0 +1,65 @@
+.products-main {
+  padding-top: 16rem;
+  padding-bottom: 6rem;
+  .u-wrapper {
+  }
+  &__label {
+    margin-bottom: 3rem;
+  }
+  &__heading {
+    margin-bottom: 4rem;
+  }
+  &__products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
+
+.product-type-card {
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 0;
+  &--1 {
+    background-image: url("../images/product-type-1.png");
+  }
+  &--2 {
+    background-image: url("../images/product-type-2.png");
+  }
+  &--3 {
+    background-image: url("../images/product-type-3.png");
+  }
+  &--4 {
+    background-image: url("../images/product-type-4.png");
+  }
+  &--5 {
+    background-image: url("../images/product-type-5.png");
+  }
+  &--6 {
+    background-image: url("../images/product-type-6.png");
+  }
+  &__heading {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &__btn {
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 1rem 3rem;
+    }
+  }
+}
