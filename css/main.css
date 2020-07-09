@@ -127,6 +127,8 @@ body {
     color: #5dbeff; }
   .heading-4--blue-dark {
     color: #2737c4; }
+  .heading-4--black {
+    color: #000; }
 
 .u-wrapper {
   width: 80%;
@@ -393,11 +395,16 @@ body {
   background-repeat: no-repeat;
   background-position: bottom; }
   .landing--locations {
-    background-image: url("../images/bckg-locations.png"); }
+    background-image: url("../../images/bckg-locations.png"); }
   .landing--installing {
-    background-image: url("../images/bckg-installing.png"); }
+    background-image: url("../../images/bckg-installing.png"); }
   .landing--eshop {
-    background-image: url("../images/bckg-envelops.png"); }
+    background-image: url("../../images/bckg-envelops.png"); }
+  .landing--outside-branding {
+    background-image: url("../../images/bckg-outsideBranding.png");
+    background-position: right; }
+    .landing--outside-branding .landing__heading {
+      text-transform: uppercase; }
   .landing__label {
     margin-bottom: 4rem; }
   .landing__heading {
@@ -437,6 +444,41 @@ body {
       right: 4rem; }
     .locations-slider .arrow--prev {
       left: 4rem; }
+
+.characteristics {
+  display: flex; }
+  .characteristics__list {
+    padding: 15rem 0;
+    padding-left: 10%;
+    flex: 0 0 35%;
+    background-color: #2737c4;
+    display: flex;
+    flex-direction: column; }
+  .characteristics__item:not(:last-child) {
+    margin-bottom: 2rem; }
+  .characteristics__link:link, .characteristics__link:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff; }
+  .characteristics__link.active {
+    color: #bf2459; }
+  .characteristics__content {
+    padding: 15rem;
+    flex: 0 0 65%;
+    background-color: #f1f1f1; }
+  .characteristics__heading {
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+  .characteristics__label {
+    margin-bottom: 2rem; }
+  .characteristics__text {
+    font-size: 2.4rem; }
+    .characteristics__text span {
+      color: #bf2459;
+      font-weight: bold; }
 
 .homepage-main {
   height: 100vh;

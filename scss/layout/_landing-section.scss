@@ -5,13 +5,20 @@
   background-position: bottom;
 
   &--locations {
-    background-image: url("../images/bckg-locations.png");
+    background-image: url("../../images/bckg-locations.png");
   }
   &--installing {
-    background-image: url("../images/bckg-installing.png");
+    background-image: url("../../images/bckg-installing.png");
   }
   &--eshop {
-    background-image: url("../images/bckg-envelops.png");
+    background-image: url("../../images/bckg-envelops.png");
+  }
+  &--outside-branding {
+    background-image: url("../../images/bckg-outsideBranding.png");
+    background-position: right;
+    .landing__heading {
+      text-transform: uppercase;
+    }
   }
   &__label {
     margin-bottom: 4rem;
