@@ -1493,3 +1493,71 @@ body {
   .past-order__date {
     justify-self: center;
     align-self: center; }
+
+.profile-main {
+  padding: 0 10%;
+  padding-top: 19rem;
+  padding-bottom: 9rem;
+  background-color: #f1f1f1; }
+
+.profile__table {
+  background-color: #fff; }
+
+.profile__heading {
+  padding: 2rem 6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 0; }
+
+.profile__body {
+  display: flex; }
+
+.profile__personal-info {
+  flex: 1;
+  border-right: 1px solid #e3e3e3;
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.profile__change-pass {
+  flex: 1;
+  border-left: 1px solid #e3e3e3;
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.profile__heading-secondary {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 5rem; }
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  width: 70%; }
+  .profile__form label {
+    font-size: 1.8rem; }
+  .profile__form input {
+    background-color: #f8f8f8;
+    height: 4.5rem;
+    border: 1px solid #eeeeee;
+    padding: 0 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+    .profile__form input:focus {
+      outline: none; }
+
+.profile__btn {
+  border: none;
+  background-color: #18a0fb;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 6rem;
+  align-self: flex-start; }
+  .profile__btn:focus {
+    outline: none; }
