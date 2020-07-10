@@ -154,8 +154,14 @@ sections.forEach((element) => {
         document
           .querySelectorAll(".branding-img")
           .forEach((img) => (img.style.opacity = 0));
-        console.log(progress.trigger.id);
         document.querySelector("." + progress.trigger.id).style.opacity = 1;
+        document
+          .querySelectorAll(".homepage-branding__link")
+          .forEach((element) => {
+            element.classList.remove("active");
+          });
+
+        $(`a[href="#${progress.trigger.id}"]`).addClass("active");
       },
       onLeaveBack: (progress) => {
         const contentString = progress.trigger.id;
@@ -167,6 +173,12 @@ sections.forEach((element) => {
           .querySelectorAll(".branding-img")
           .forEach((img) => (img.style.opacity = 0));
         document.querySelector("." + newContentString).style.opacity = 1;
+        document
+          .querySelectorAll(".homepage-branding__link")
+          .forEach((element) => {
+            element.classList.remove("active");
+            $(`a[href="#${newContentString}"]`).addClass("active");
+          });
       },
     },
   });
