@@ -1,0 +1,222 @@
+.cart-main {
+  padding: 0 10%;
+  padding-top: 19rem;
+  padding-bottom: 9rem;
+  background-color: #f1f1f1;
+  display: flex;
+
+  &__login {
+    background-color: #fff;
+    margin-left: 2rem;
+    align-self: flex-start;
+    padding: 8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    // max-width: 40rem;
+    flex: 0 0 25%;
+  }
+
+  &__register {
+    background-color: #fff;
+    margin-left: 2rem;
+    align-self: flex-start;
+    padding: 8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    // max-width: 40rem;
+    flex: 0 0 25%;
+  }
+}
+
+.cart {
+  &__table {
+    background-color: #fff;
+    flex: 0 0 75%;
+  }
+  &__heading {
+    padding: 2rem 6rem;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+  &__body {
+  }
+  &__footer {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__continue-btn {
+    font-size: 1.8rem;
+    color: #717171;
+  }
+  &__text {
+    font-size: 1.8rem;
+    span {
+      font-size: 2.2rem;
+      color: #18a0fb;
+    }
+  }
+}
+
+.order {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #e3e3e3;
+  position: relative;
+  &__remove-btn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+  &__img {
+    width: 70%;
+    justify-self: center;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+  }
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  &__price {
+    font-size: 1.8rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__quantity {
+    justify-self: center;
+    align-self: center;
+    .input-number-box {
+      margin-left: unset;
+    }
+  }
+  &__full-price {
+    justify-self: center;
+    align-self: center;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.login {
+  &__heading {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin-bottom: 4rem;
+  }
+  &__form {
+    margin-bottom: 2rem;
+    label {
+      font-size: 1.8rem;
+    }
+    input {
+      background-color: #f8f8f8;
+      height: 4.5rem;
+      border: 1px solid #eeeeee;
+      padding: 0 3rem;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__btn {
+    background-color: #18a0fb;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__forgotten-pass-btn {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: #9e9e9e;
+      align-self: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__no-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  &__register-btn {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.7rem;
+      color: #18a0fb;
+    }
+  }
+}
+
+.register {
+  &__form {
+    label {
+      font-size: 1.8rem;
+    }
+    input {
+      background-color: #f8f8f8;
+      height: 4.5rem;
+      border: 1px solid #eeeeee;
+      padding: 0 3rem;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  &__input-wrapper {
+    input {
+      padding-left: 2rem;
+      padding-right: 0;
+    }
+    &--date {
+      margin-right: 2rem;
+    }
+
+    &--cvv {
+    }
+  }
+}

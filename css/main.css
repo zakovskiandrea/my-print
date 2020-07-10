@@ -1561,3 +1561,168 @@ body {
   align-self: flex-start; }
   .profile__btn:focus {
     outline: none; }
+
+.cart-main {
+  padding: 0 10%;
+  padding-top: 19rem;
+  padding-bottom: 9rem;
+  background-color: #f1f1f1;
+  display: flex; }
+  .cart-main__login {
+    background-color: #fff;
+    margin-left: 2rem;
+    align-self: flex-start;
+    padding: 8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%; }
+  .cart-main__register {
+    background-color: #fff;
+    margin-left: 2rem;
+    align-self: flex-start;
+    padding: 8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%; }
+
+.cart__table {
+  background-color: #fff;
+  flex: 0 0 75%; }
+
+.cart__heading {
+  padding: 2rem 6rem;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 0;
+  font-size: 3rem; }
+
+.cart__footer {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.cart__continue-btn {
+  font-size: 1.8rem;
+  color: #717171; }
+
+.cart__text {
+  font-size: 1.8rem; }
+  .cart__text span {
+    font-size: 2.2rem;
+    color: #18a0fb; }
+
+.order {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #e3e3e3;
+  position: relative; }
+  .order__remove-btn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer; }
+  .order__img {
+    width: 70%;
+    justify-self: center; }
+    .order__img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .order__heading {
+    font-size: 2.4rem;
+    font-weight: bold; }
+  .order__text {
+    font-size: 1.8rem;
+    line-height: 3rem; }
+  .order__price {
+    font-size: 1.8rem; }
+    .order__price span {
+      font-weight: bold; }
+  .order__quantity {
+    justify-self: center;
+    align-self: center; }
+    .order__quantity .input-number-box {
+      margin-left: unset; }
+  .order__full-price {
+    justify-self: center;
+    align-self: center; }
+    .order__full-price span {
+      font-weight: bold; }
+
+.login__heading {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 4rem; }
+
+.login__form {
+  margin-bottom: 2rem; }
+  .login__form label {
+    font-size: 1.8rem; }
+  .login__form input {
+    background-color: #f8f8f8;
+    height: 4.5rem;
+    border: 1px solid #eeeeee;
+    padding: 0 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    width: 100%; }
+    .login__form input:focus {
+      outline: none; }
+
+.login__btn {
+  background-color: #18a0fb;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 4rem;
+  font-size: 1.8rem;
+  border: none; }
+  .login__btn:focus {
+    outline: none; }
+
+.login__forgotten-pass-btn:link, .login__forgotten-pass-btn:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #9e9e9e;
+  align-self: center;
+  margin-bottom: 2rem; }
+
+.login__no-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.login__text {
+  font-size: 1.7rem;
+  margin-bottom: 0; }
+
+.login__register-btn:link, .login__register-btn:visited {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #18a0fb; }
+
+.register__form label {
+  font-size: 1.8rem; }
+
+.register__form input {
+  background-color: #f8f8f8;
+  height: 4.5rem;
+  border: 1px solid #eeeeee;
+  padding: 0 3rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  width: 100%; }
+  .register__form input:focus {
+    outline: none; }
+
+.register__wrapper {
+  display: flex;
+  width: 100%; }
+
+.register__input-wrapper input {
+  padding-left: 2rem;
+  padding-right: 0; }
+
+.register__input-wrapper--date {
+  margin-right: 2rem; }

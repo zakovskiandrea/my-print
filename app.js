@@ -106,15 +106,19 @@ $(document).ready(function () {
         .addClass("fa-plus");
     });
 
-  $(".input-number-box .minus").click(() => {
-    let currentNum = $(".input-number-box input").val() * 1;
+  $(".input-number-box .minus").click(function () {
+    let currentNum = $(this).siblings("input").val() * 1;
     if (currentNum === 1) return;
-    $(".input-number-box input").val(currentNum - 1);
+    $(this)
+      .siblings("input")
+      .val(currentNum - 1);
   });
 
-  $(".input-number-box .plus").click(() => {
-    let currentNum = $(".input-number-box input").val() * 1;
-    $(".input-number-box input").val(currentNum + 1);
+  $(".input-number-box .plus").click(function () {
+    let currentNum = $(this).siblings("input").val() * 1;
+    $(this)
+      .siblings("input")
+      .val(currentNum + 1);
   });
 });
 

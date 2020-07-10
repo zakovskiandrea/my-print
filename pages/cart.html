@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>My Print</title>
+    <script src="https://kit.fontawesome.com/6a7797a227.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header header--white">
+        <div class="header__logo-box">
+            <img class="header__logo" src="../images/logo.svg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="./homepage.html" class="header__link">Почетна</a></li>
+                <li class="header__item"><a href="#" class="header__link">Регистрација</a></li>
+                <li class="header__item"><a href="#" class="header__link">Мои Нарачки</a></li>
+                <li class="header__item"><a href="#" class="header__link"><img src="../images/bag-icon.svg"
+                            alt="bag"></a></li>
+                <li class="header__item"><a href="#" class="header__link"><img src="../images/profile-icon.svg"
+                            alt="profile"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <!-- HEADER MOBILE -->
+    <header class="header header-phone">
+        <div class="header__logo-box header-phone__logo-box">
+            <img class="header__logo header-phone__logo" src="../images/logo.svg" alt="logo" />
+        </div>
+        <div class="header-phone__dropdown">
+            <div class="header-phone__dropbtn"><img src="../images/hamburger-icon.svg" alt="button" /></div>
+            <div class="header-phone__dropdown-content">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./homepage.html" class="header__link">Почетна</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">Регистрација</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">Мои Нарачки</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link"><img src="../images/profile-icon.svg"
+                                alt="profile">Профил</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link"><img src="../images/bag-icon.svg"
+                                alt="bag">Кошничка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER-MOBILE END -->
+    <!-- CART MAIN -->
+    <section class="cart-main">
+        <div class="cart__table">
+            <h3 class="cart__heading">Кошничка</h3>
+            <div class="cart__body">
+                <div class="order">
+                    <img class="order__remove-btn" src="../images/remove-icon.svg" alt="remove">
+                    <div class="order__img"><img src="../images/product-1.png" alt="product"></div>
+                    <div class="order__content">
+                        <h4 class="order__heading">Lorem ipsum dolor</h4>
+                        <p class="order__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore.</p>
+                        <p class="order__price"><span>Цена: </span>1.750MKD</p>
+                    </div>
+                    <div class="order__quantity">
+                        <p class="order__text">Количина:</p>
+                        <div class="input-number-box">
+                            <button class="minus"><img src="../images/minus-icon.svg" alt="minus"></button>
+                            <input value="1" type="number" class="input">
+                            <button class="plus"><img src="../images/plus-icon.svg" alt="plus"></button>
+                        </div>
+                    </div>
+                    <div class="order__full-price">
+                        <p class="order__text">Вкупна цена:</p>
+                        <p class="order__text"><span>2.400 </span>ден.</p>
+                    </div>
+                </div>
+                <div class="order">
+                    <img class="order__remove-btn" src="../images/remove-icon.svg" alt="remove">
+                    <div class="order__img"><img src="../images/product-1.png" alt="product"></div>
+                    <div class="order__content">
+                        <h4 class="order__heading">Lorem ipsum dolor</h4>
+                        <p class="order__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore.</p>
+                        <p class="order__price"><span>Цена: </span>1.750MKD</p>
+                    </div>
+                    <div class="order__quantity">
+                        <p class="order__text">Количина:</p>
+                        <div class="input-number-box">
+                            <button class="minus"><img src="../images/minus-icon.svg" alt="minus"></button>
+                            <input value="1" type="number" class="input">
+                            <button class="plus"><img src="../images/plus-icon.svg" alt="plus"></button>
+                        </div>
+                    </div>
+                    <div class="order__full-price">
+                        <p class="order__text">Вкупна цена:</p>
+                        <p class="order__text"><span>2.400 </span>ден.</p>
+                    </div>
+                </div>
+                <div class="order">
+                    <img class="order__remove-btn" src="../images/remove-icon.svg" alt="remove">
+                    <div class="order__img"><img src="../images/product-1.png" alt="product"></div>
+                    <div class="order__content">
+                        <h4 class="order__heading">Lorem ipsum dolor</h4>
+                        <p class="order__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore.</p>
+                        <p class="order__price"><span>Цена: </span>1.750MKD</p>
+                    </div>
+                    <div class="order__quantity">
+                        <p class="order__text">Количина:</p>
+                        <div class="input-number-box">
+                            <button class="minus"><img src="../images/minus-icon.svg" alt="minus"></button>
+                            <input value="1" type="number" class="input">
+                            <button class="plus"><img src="../images/plus-icon.svg" alt="plus"></button>
+                        </div>
+                    </div>
+                    <div class="order__full-price">
+                        <p class="order__text">Вкупна цена:</p>
+                        <p class="order__text"><span>2.400 </span>ден.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__footer">
+                <a class="cart__continue-btn">Продолжи со купување</a>
+                <p class="cart__text">Вкупна цена: <span>36.800 ден.</span></p>
+            </div>
+        </div>
+        <!-- <div class="cart-main__login">
+            <h4 class="login__heading">Ве молиме најавете се за да продолжите со нарачката</h4>
+            <form class="login__form">
+                <label for="username">Корисничко име</label>
+                <input type="text" name="username" id="username">
+                <label for="password">Лозинка</label>
+                <input type="password" name="password" id="password">
+                <button class="login__btn">Најава</button>
+            </form>
+            <a href="#" class="login__forgotten-pass-btn">Заборавена лозинка</a>
+            <div class="login__no-account">
+                <p class="login__text">Немате акаунт?</p>
+                <a href="#" class="login__register-btn">Регистрирајте се тука</a>
+            </div>
+        </div> -->
+        <div class="cart-main__register">
+            <form class="register__form">
+                <label for="name">Име и Презиме</label>
+                <input type="text" name="name" id="name">
+                <label for="adress">Адреса на достава</label>
+                <input type="text" name="adress" id="adress">
+                <label for="email">E-mail адреса</label>
+                <input type="email" name="email" id="email">
+                <label for="cardName">Име на картичка</label>
+                <input type="text" name="cardName" id="cardName">
+                <label for="carnNumber">Број на картичка</label>
+                <input type="number" name="cardNumber" id="cardNumber">
+                <div class="register__wrapper">
+                    <div class="register__input-wrapper register__input-wrapper--date">
+                        <label for="expDate">Датум на важност</label>
+                        <input type="date" name="expDate" id="expDate">
+                    </div>
+                    <div class="register__input-wrapper register__input-wrapper--cvv">
+                        <label for="securityNum">CVC/CVV</label>
+                        <input type="number" name="securityNum" id="securityNum">
+                    </div>
+                </div>
+                <button class="login__btn">Најава</button>
+            </form>
+        </div>
+    </section>
+    <!-- CART MAIN END -->
+    <!-- SECTION FOOTER-->
+    <footer class="footer">
+        <div class="u-wrapper">
+            <div class="footer__socials">
+                <div class="footer__social"><img src="../images/fb-icon.svg" alt="facebook" />Facebook</div>
+                <div class="footer__social"><img src="../images/insta-icon.svg" alt="instagram" />Instagram</div>
+            </div>
+            <p class="footer__copyright">My Print - All Rights Reserved | Мај Принт - Сите права задржани</p>
+        </div>
+    </footer>
+    <!-- SECTION FOOTER END-->
+    <script src="../node_modules/swiper/swiper-bundle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>
