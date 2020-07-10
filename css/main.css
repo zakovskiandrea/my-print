@@ -1450,7 +1450,8 @@ body {
   background-color: #f1f1f1; }
 
 .orders__table {
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 5rem; }
 
 .orders__header {
   display: flex;
@@ -1458,17 +1459,20 @@ body {
   padding: 2rem 6rem;
   align-items: center;
   border-bottom: 1px solid #e3e3e3; }
-  .orders__header img {
-    height: 4rem; }
 
 .orders__heading {
   font-size: 3rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.orders__date {
+  font-size: 1.8rem;
+  margin-bottom: 0; }
 
 .past-order {
   padding: 4rem 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .past-order:not(:last-child) {
     border-bottom: 1px solid #e3e3e3; }
   .past-order__img {
@@ -1498,9 +1502,6 @@ body {
     align-self: center; }
     .past-order__full-price span {
       font-weight: bold; }
-  .past-order__date {
-    justify-self: center;
-    align-self: center; }
 
 .profile-main {
   padding: 0 10%;
