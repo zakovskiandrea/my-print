@@ -1,0 +1,83 @@
+.orders-main {
+  padding: 0 10%;
+  padding-top: 19rem;
+  padding-bottom: 9rem;
+  background-color: #f1f1f1;
+}
+
+.orders {
+  &__table {
+    background-color: #fff;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    align-items: center;
+    border-bottom: 1px solid #e3e3e3;
+    img {
+      height: 4rem;
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &__body {
+  }
+}
+
+.past-order {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  &:not(:last-child) {
+    border-bottom: 1px solid #e3e3e3;
+  }
+  &__img {
+    width: 70%;
+    justify-self: center;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+  }
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  &__price {
+    font-size: 1.8rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__quantity {
+    justify-self: center;
+    align-self: center;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__full-price {
+    justify-self: center;
+    align-self: center;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__date {
+    justify-self: center;
+    align-self: center;
+  }
+}

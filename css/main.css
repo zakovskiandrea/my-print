@@ -1434,3 +1434,62 @@ body {
   .preparation-card__text {
     font-size: 2rem;
     line-height: 4rem; }
+
+.orders-main {
+  padding: 0 10%;
+  padding-top: 19rem;
+  padding-bottom: 9rem;
+  background-color: #f1f1f1; }
+
+.orders__table {
+  background-color: #fff; }
+
+.orders__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3; }
+  .orders__header img {
+    height: 4rem; }
+
+.orders__heading {
+  font-size: 3rem;
+  font-weight: bold; }
+
+.past-order {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+  .past-order:not(:last-child) {
+    border-bottom: 1px solid #e3e3e3; }
+  .past-order__img {
+    width: 70%;
+    justify-self: center; }
+    .past-order__img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .past-order__heading {
+    font-size: 2.4rem;
+    font-weight: bold; }
+  .past-order__text {
+    font-size: 1.8rem;
+    line-height: 3rem; }
+  .past-order__price {
+    font-size: 1.8rem; }
+    .past-order__price span {
+      font-weight: bold; }
+  .past-order__quantity {
+    justify-self: center;
+    align-self: center; }
+    .past-order__quantity span {
+      font-weight: bold; }
+  .past-order__full-price {
+    justify-self: center;
+    align-self: center; }
+    .past-order__full-price span {
+      font-weight: bold; }
+  .past-order__date {
+    justify-self: center;
+    align-self: center; }
