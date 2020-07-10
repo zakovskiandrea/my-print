@@ -1,0 +1,77 @@
+.services-main {
+  padding-top: 16rem;
+  padding-bottom: 6rem;
+  &__label {
+    margin-bottom: 3rem;
+  }
+  &__heading {
+    margin-bottom: 4rem;
+  }
+  &__services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+  }
+}
+
+.service-type-card {
+  &__img {
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    &--1 {
+      background-image: url("../images/service-type-1.png");
+    }
+    &--2 {
+      background-image: url("../images/service-type-1.png");
+    }
+    &--3 {
+      background-image: url("../images/service-type-1.png");
+    }
+    &--4 {
+      background-image: url("../images/service-type-1.png");
+    }
+    &--5 {
+      background-image: url("../images/service-type-1.png");
+    }
+    &--6 {
+      background-image: url("../images/service-type-1.png");
+    }
+  }
+  &__heading {
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+  &__btn {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.8rem;
+      padding: 1.5rem 4rem;
+      color: #000;
+      border: 1px solid #2737c4;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #2737c4;
+    }
+  }
+}
