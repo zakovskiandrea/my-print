@@ -295,7 +295,14 @@
 
 .homepage-branding {
   display: flex;
+  &__list {
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    z-index: 10;
+  }
   &__img {
+    position: relative;
     flex: 0 0 50%;
     height: calc(100vh - 10rem);
     .content01 {
@@ -312,7 +319,7 @@
   }
   &__content {
     flex: 0 0 50%;
-    padding: 5rem 8rem;
+    padding: 30rem 8rem;
     background-color: #2737c4;
   }
   &__label {
@@ -337,6 +344,10 @@
       text-transform: uppercase;
       font-size: 2rem;
       color: #fff;
+
+      &.active {
+        font-weight: bold;
+      }
     }
   }
 }
