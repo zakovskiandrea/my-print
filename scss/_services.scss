@@ -12,6 +12,12 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
     row-gap: 3rem;
+    @include for-laptop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include for-phone {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -21,7 +27,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +56,9 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    @include for-laptop {
+      font-size: 3.5rem;
+    }
   }
   &__text {
     font-size: 2rem;
