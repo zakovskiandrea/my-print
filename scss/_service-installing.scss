@@ -1,8 +1,13 @@
 .installing-about {
   padding: 12rem 0;
-
+  @include for-phone {
+    padding: 6rem 0;
+  }
   &__what {
     display: flex;
+    @include for-tablet {
+      flex-direction: column;
+    }
   }
   &__why {
   }
@@ -14,13 +19,25 @@
     flex: 0 0 20%;
     display: flex;
     align-items: center;
+    @include for-tablet {
+      flex: 1;
+      padding-left: 0;
+      margin-bottom: 2rem;
+    }
     img {
       width: 20rem;
+      @include for-tablet {
+        width: 15rem;
+      }
     }
   }
   &__content {
     flex: 0 0 80%;
     padding-left: 8rem;
+    @include for-tablet {
+      flex: 1;
+      padding-left: 0;
+    }
   }
   &__heading {
     font-weight: bold;
@@ -41,6 +58,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10rem;
+    @include for-desktop-xl {
+      column-gap: 5rem;
+    }
+    @include for-desktop {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5rem;
+    }
+    @include for-laptop {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -61,6 +88,9 @@
   &__heading {
     font-size: 3rem;
     font-weight: bold;
+    @include for-laptop {
+      font-size: 2.3rem;
+    }
   }
 
   &__text {
@@ -75,6 +105,9 @@
 .installing-usage {
   background-color: #2737c4;
   padding: 12rem 0;
+  @include for-phone {
+    padding: 6rem 0;
+  }
   .u-wrapper {
   }
   &__heading {
@@ -83,10 +116,16 @@
   }
   &__heading-secondary {
     margin-bottom: 6rem;
+    @include for-phone {
+      font-size: 2.6rem;
+    }
   }
   &__lists {
     display: flex;
     justify-content: space-between;
+    @include for-tablet {
+      display: block;
+    }
   }
   &__list {
     list-style: none;
@@ -96,9 +135,12 @@
     font-size: 2.6rem;
     color: #fff;
     margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
 
     img {
       margin-right: 3rem;
+      margin-top: 1rem;
     }
   }
 }

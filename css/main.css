@@ -1289,8 +1289,14 @@ body {
 
 .installing-about {
   padding: 12rem 0; }
+  @media (max-width: 575px) {
+    .installing-about {
+      padding: 6rem 0; } }
   .installing-about__what {
     display: flex; }
+    @media (max-width: 768px) {
+      .installing-about__what {
+        flex-direction: column; } }
 
 .what {
   margin-bottom: 10rem; }
@@ -1298,11 +1304,23 @@ body {
     flex: 0 0 20%;
     display: flex;
     align-items: center; }
+    @media (max-width: 768px) {
+      .what__img {
+        flex: 1;
+        padding-left: 0;
+        margin-bottom: 2rem; } }
     .what__img img {
       width: 20rem; }
+      @media (max-width: 768px) {
+        .what__img img {
+          width: 15rem; } }
   .what__content {
     flex: 0 0 80%;
     padding-left: 8rem; }
+    @media (max-width: 768px) {
+      .what__content {
+        flex: 1;
+        padding-left: 0; } }
   .what__heading {
     font-weight: bold;
     margin-bottom: 2rem; }
@@ -1317,6 +1335,16 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10rem; }
+  @media (max-width: 1360px) {
+    .why__content {
+      column-gap: 5rem; } }
+  @media (max-width: 1199px) {
+    .why__content {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5rem; } }
+  @media (max-width: 991px) {
+    .why__content {
+      grid-template-columns: repeat(1, 1fr); } }
 
 .why-card__header {
   height: 7rem;
@@ -1331,6 +1359,9 @@ body {
 .why-card__heading {
   font-size: 3rem;
   font-weight: bold; }
+  @media (max-width: 991px) {
+    .why-card__heading {
+      font-size: 2.3rem; } }
 
 .why-card__text {
   font-size: 2.4rem;
@@ -1341,23 +1372,35 @@ body {
 .installing-usage {
   background-color: #2737c4;
   padding: 12rem 0; }
+  @media (max-width: 575px) {
+    .installing-usage {
+      padding: 6rem 0; } }
   .installing-usage__heading {
     font-weight: bold;
     margin-bottom: 4rem; }
   .installing-usage__heading-secondary {
     margin-bottom: 6rem; }
+    @media (max-width: 575px) {
+      .installing-usage__heading-secondary {
+        font-size: 2.6rem; } }
   .installing-usage__lists {
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 768px) {
+      .installing-usage__lists {
+        display: block; } }
   .installing-usage__list {
     list-style: none;
     margin-bottom: 0; }
   .installing-usage__item {
     font-size: 2.6rem;
     color: #fff;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start; }
     .installing-usage__item img {
-      margin-right: 3rem; }
+      margin-right: 3rem;
+      margin-top: 1rem; }
 
 .locations-about {
   padding: 12rem 0; }
