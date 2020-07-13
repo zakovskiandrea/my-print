@@ -1770,6 +1770,14 @@ body {
   padding-bottom: 9rem;
   background-color: #f1f1f1;
   display: flex; }
+  @media (max-width: 768px) {
+    .cart-main {
+      flex-direction: column; } }
+  @media (max-width: 575px) {
+    .cart-main {
+      padding: 0;
+      padding-top: 15rem;
+      padding-bottom: 5rem; } }
   .cart-main__login {
     background-color: #fff;
     margin-left: 2rem;
@@ -1777,7 +1785,10 @@ body {
     padding: 8rem 3rem;
     display: flex;
     flex-direction: column;
-    flex: 0 0 25%; }
+    flex: 0.2; }
+    @media (max-width: 768px) {
+      .cart-main__login {
+        margin-left: unset; } }
   .cart-main__register {
     background-color: #fff;
     margin-left: 2rem;
@@ -1785,11 +1796,17 @@ body {
     padding: 8rem 3rem;
     display: flex;
     flex-direction: column;
-    flex: 0 0 25%; }
+    flex: 0.2; }
+    @media (max-width: 768px) {
+      .cart-main__register {
+        margin-left: unset; } }
 
 .cart__table {
   background-color: #fff;
-  flex: 0 0 75%; }
+  flex: 0.8; }
+  @media (max-width: 768px) {
+    .cart__table {
+      margin-bottom: 3rem; } }
 
 .cart__heading {
   padding: 2rem 6rem;
@@ -1819,11 +1836,20 @@ body {
   grid-template-columns: repeat(4, 1fr);
   border-bottom: 1px solid #e3e3e3;
   position: relative; }
+  @media (max-width: 1440px) {
+    .order {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem; } }
   .order__remove-btn {
     position: absolute;
     top: 1rem;
     right: 2rem;
     cursor: pointer; }
+    @media (max-width: 1199px) {
+      .order__remove-btn {
+        top: unset;
+        bottom: 1rem;
+        right: 2rem; } }
   .order__img {
     width: 70%;
     justify-self: center; }
@@ -1831,6 +1857,15 @@ body {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+      @media (max-width: 991px) {
+        .order__img img {
+          height: 50%; } }
+      @media (max-width: 768px) {
+        .order__img img {
+          height: 100%; } }
+  @media (max-width: 1199px) {
+    .order__content {
+      padding-right: 1rem; } }
   .order__heading {
     font-size: 2.4rem;
     font-weight: bold; }
