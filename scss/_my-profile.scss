@@ -45,7 +45,6 @@
   &__form {
     display: flex;
     flex-direction: column;
-
     width: 70%;
     label {
       font-size: 1.8rem;
@@ -72,5 +71,24 @@
     &:focus {
       outline: none;
     }
+  }
+}
+
+.inputs-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .input-box {
+    &--city {
+      flex: 0 0 65%;
+    }
+    &--zipCode {
+      flex: 0 0 30%;
+    }
+  }
+
+  input {
+    width: 100%;
   }
 }

@@ -1571,6 +1571,17 @@ body {
   .profile__btn:focus {
     outline: none; }
 
+.inputs-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+  .inputs-wrapper .input-box--city {
+    flex: 0 0 65%; }
+  .inputs-wrapper .input-box--zipCode {
+    flex: 0 0 30%; }
+  .inputs-wrapper input {
+    width: 100%; }
+
 .cart-main {
   padding: 0 10%;
   padding-top: 19rem;
