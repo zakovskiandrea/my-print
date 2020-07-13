@@ -1404,8 +1404,14 @@ body {
 
 .locations-about {
   padding: 12rem 0; }
+  @media (max-width: 575px) {
+    .locations-about {
+      padding: 6rem 0; } }
   .locations-about__what {
     display: flex; }
+    @media (max-width: 768px) {
+      .locations-about__what {
+        flex-direction: column; } }
   .locations-about__label {
     margin-bottom: 3rem; }
   .locations-about__heading {
@@ -1416,6 +1422,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 6rem;
     row-gap: 6rem; }
+    @media (max-width: 1199px) {
+      .locations-about__card-container {
+        column-gap: 3rem;
+        row-gap: 3rem; } }
+    @media (max-width: 991px) {
+      .locations-about__card-container {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) {
+      .locations-about__card-container {
+        grid-template-columns: repeat(1, 1fr); } }
 
 .location-card {
   border: 1px solid rgba(0, 0, 0, 0.13); }

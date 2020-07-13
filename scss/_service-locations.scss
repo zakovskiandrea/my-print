@@ -1,7 +1,13 @@
 .locations-about {
   padding: 12rem 0;
+  @include for-phone {
+    padding: 6rem 0;
+  }
   &__what {
     display: flex;
+    @include for-tablet {
+      flex-direction: column;
+    }
   }
 
   &__locations {
@@ -21,6 +27,17 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 6rem;
     row-gap: 6rem;
+    @include for-desktop {
+      column-gap: 3rem;
+      row-gap: 3rem;
+    }
+
+    @include for-laptop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include for-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
