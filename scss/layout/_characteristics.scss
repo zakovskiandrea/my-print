@@ -4,6 +4,16 @@
     flex-direction: column;
   }
 
+  &--homepage {
+    display: none;
+    @include for-tablet {
+      display: flex;
+    }
+    .characteristics__content {
+      background-color: #2737c4;
+    }
+  }
+
   &__list {
     padding: 15rem 0;
     padding-left: 10%;
