@@ -1747,6 +1747,24 @@ body {
 .register__input-wrapper--date {
   margin-right: 2rem; }
 
+#cardNumber::-webkit-outer-spin-button, #cardNumber::-webkit-inner-spin-button,
+#securityNum::-webkit-outer-spin-button,
+#securityNum::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.cardNumber-wrapper {
+  position: relative;
+  margin-bottom: 2rem; }
+  .cardNumber-wrapper input {
+    margin-bottom: unset; }
+  .cardNumber-wrapper img {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; }
+
 .services-main {
   padding-top: 16rem;
   padding-bottom: 6rem; }
