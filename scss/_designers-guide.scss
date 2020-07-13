@@ -1,5 +1,8 @@
 .designers-guide-main {
   padding: 12rem 0;
+  @include for-phone {
+    padding: 6rem 0;
+  }
   &__desc {
     font-size: 2.4rem;
     line-height: 4rem;
@@ -10,6 +13,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2.5rem;
     margin-bottom: 8rem;
+    @include for-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include for-phone {
+      margin-bottom: 4rem;
+    }
   }
   &__important {
     width: 100%;
@@ -27,12 +36,24 @@
       line-height: 4rem;
       background-color: #f1f1f1;
       padding: 3rem 6rem;
+      @include for-phone {
+        padding: 2rem 3rem;
+      }
     }
   }
 }
 
 .preparation-card {
   padding: 6rem 4rem;
+  @include for-tablet {
+    padding: 2rem 2rem;
+  }
+
+  @include for-phone {
+    &:nth-last-of-type(-n + 2) {
+      padding: 0 2rem;
+    }
+  }
   &--blue {
     position: relative;
     border: dashed 4px #2737c4;
@@ -47,6 +68,9 @@
       right: 10%;
       transform: translateY(-50%);
       height: 8rem;
+      @include for-tablet {
+        height: 6rem;
+      }
     }
   }
   &--red {

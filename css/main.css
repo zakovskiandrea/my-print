@@ -1390,6 +1390,9 @@ body {
 
 .designers-guide-main {
   padding: 12rem 0; }
+  @media (max-width: 575px) {
+    .designers-guide-main {
+      padding: 6rem 0; } }
   .designers-guide-main__desc {
     font-size: 2.4rem;
     line-height: 4rem;
@@ -1399,6 +1402,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2.5rem;
     margin-bottom: 8rem; }
+    @media (max-width: 768px) {
+      .designers-guide-main__preparations-content {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media (max-width: 575px) {
+      .designers-guide-main__preparations-content {
+        margin-bottom: 4rem; } }
   .designers-guide-main__important {
     width: 100%; }
     .designers-guide-main__important .important__heading {
@@ -1414,9 +1423,18 @@ body {
       line-height: 4rem;
       background-color: #f1f1f1;
       padding: 3rem 6rem; }
+      @media (max-width: 575px) {
+        .designers-guide-main__important .important__text {
+          padding: 2rem 3rem; } }
 
 .preparation-card {
   padding: 6rem 4rem; }
+  @media (max-width: 768px) {
+    .preparation-card {
+      padding: 2rem 2rem; } }
+  @media (max-width: 575px) {
+    .preparation-card:nth-last-of-type(-n + 2) {
+      padding: 0 2rem; } }
   .preparation-card--blue {
     position: relative;
     border: dashed 4px #2737c4;
@@ -1429,6 +1447,9 @@ body {
       right: 10%;
       transform: translateY(-50%);
       height: 8rem; }
+      @media (max-width: 768px) {
+        .preparation-card--blue img {
+          height: 6rem; } }
   .preparation-card--red {
     border: dashed 4px #eb3131;
     border-radius: 10px; }
