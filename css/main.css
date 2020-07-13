@@ -1351,6 +1351,12 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem; }
+    @media (max-width: 1199px) {
+      .products-main__products-container {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 575px) {
+      .products-main__products-container {
+        grid-template-columns: repeat(1, 1fr); } }
 
 .product-type-card {
   height: 35rem;
@@ -1382,6 +1388,12 @@ body {
     color: #fff;
     text-align: center;
     margin-bottom: 3rem; }
+    @media (max-width: 1199px) {
+      .product-type-card__heading {
+        font-size: 3.5rem; } }
+    @media (max-width: 768px) {
+      .product-type-card__heading {
+        font-size: 2.8rem; } }
   .product-type-card__btn:link, .product-type-card__btn:visited {
     font-size: 1.8rem;
     color: #fff;

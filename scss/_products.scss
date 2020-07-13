@@ -13,6 +13,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
+
+    @include for-desktop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include for-phone {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -52,6 +59,12 @@
     color: #fff;
     text-align: center;
     margin-bottom: 3rem;
+    @include for-desktop {
+      font-size: 3.5rem;
+    }
+    @include for-tablet {
+      font-size: 2.8rem;
+    }
   }
   &__btn {
     &:link,
