@@ -1,5 +1,8 @@
 .characteristics {
   display: flex;
+  @include for-tablet {
+    flex-direction: column;
+  }
 
   &__list {
     padding: 15rem 0;
@@ -8,6 +11,20 @@
     background-color: #2737c4;
     display: flex;
     flex-direction: column;
+
+    &--desktop {
+      @include for-tablet {
+        display: none;
+      }
+    }
+    @include for-desktop {
+      padding: 10rem 0;
+      padding-left: 8%;
+    }
+    @include for-laptop {
+      padding: 5rem;
+      padding-left: 3%;
+    }
   }
   &__item {
     &:not(:last-child) {
@@ -31,6 +48,12 @@
     padding: 15rem;
     flex: 0 0 65%;
     background-color: #f1f1f1;
+    @include for-desktop {
+      padding: 10rem;
+    }
+    @include for-laptop {
+      padding: 5rem;
+    }
   }
 
   &__heading {
@@ -38,6 +61,9 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    @include for-phone {
+      font-size: 3.5rem;
+    }
   }
   &__label {
     margin-bottom: 2rem;
@@ -47,6 +73,59 @@
     span {
       color: #bf2459;
       font-weight: bold;
+    }
+  }
+}
+
+.swiper-container--outsideBranding {
+  background-color: #2737c4;
+  padding: 2rem 0;
+  padding-left: 6%;
+  display: none;
+
+  @include for-tablet {
+    display: block;
+  }
+
+  width: 100%;
+  .nav {
+    flex-wrap: unset;
+    display: unset;
+    padding-left: unset;
+    margin-bottom: unset;
+    list-style: unset;
+    display: flex;
+  }
+  .characteristics__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: unset;
+    }
+  }
+  ul {
+    border: none;
+    align-items: center;
+  }
+
+  .characteristics__link {
+    &:link,
+    &:visited {
+      color: #fff;
+      padding: 1rem 3rem;
+      border-radius: 20px;
+      width: 100%;
+      text-align: center;
+      @include for-tablet {
+        font-weight: unset;
+      }
+    }
+
+    &.active {
+      background-color: #fff;
+      color: #000;
     }
   }
 }

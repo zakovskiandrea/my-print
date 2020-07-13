@@ -65,10 +65,11 @@ var swiper = new Swiper(".swiper-container--similar-products", {
 
 var swiper = new Swiper(".swiper-container--locations", {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: window.innerWidth < 576 ? 1 : window.innerWidth < 992 ? 2 : 3,
   // window.innerWidth < 769
   //   ? 1.5
-  //   : window.innerWidth < 992
+  //   :
+
   //   ? 2
   //   : window.innerWidth < 1441
   //   ? 3
@@ -78,6 +79,18 @@ var swiper = new Swiper(".swiper-container--locations", {
     nextEl: ".locations-slider .arrow--next",
     prevEl: ".locations-slider .arrow--prev",
   },
+});
+
+var swiper = new Swiper(".swiper-container--outsideBranding", {
+  slidesPerView: 1.5,
+  // window.innerWidth < 769
+  //   ? 1.5
+  //   : window.innerWidth < 992
+  //   ? 2
+  //   : window.innerWidth < 1441
+  //   ? 3
+  //   : 4,
+  spaceBetween: 15,
 });
 
 $(window).on("scroll", function () {
