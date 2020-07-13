@@ -3,6 +3,11 @@
   padding-top: 19rem;
   padding-bottom: 9rem;
   background-color: #f1f1f1;
+  @include for-phone {
+    padding: 0;
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .orders {
@@ -12,20 +17,43 @@
   }
   &__header {
     display: flex;
-    justify-content: space-between;
     padding: 2rem 6rem;
     align-items: center;
     border-bottom: 1px solid #e3e3e3;
+    @include for-laptop {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include for-phone {
+      padding: 2rem;
+    }
+  }
+  &__full-price-main {
+    display: flex;
+    align-items: center;
+    p {
+      margin-bottom: 0;
+    }
+    span {
+      font-size: 2.4rem;
+      color: #18a0fb;
+      margin-left: 1rem;
+    }
   }
 
   &__heading {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
+    margin-right: 2rem;
   }
   &__date {
     font-size: 1.8rem;
     margin-bottom: 0;
+    margin-left: auto;
+    @include for-laptop {
+      margin-left: unset;
+    }
   }
   &__body {
   }
@@ -35,21 +63,36 @@
   padding: 4rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  @include for-laptop {
+    grid-template-columns: repeat(2, 1fr);
+  }
   &:not(:last-child) {
     border-bottom: 1px solid #e3e3e3;
   }
   &__img {
     width: 70%;
     justify-self: center;
+    @include for-phone {
+      display: flex;
+      align-items: center;
+    }
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      @include for-phone {
+        height: 50%;
+      }
     }
   }
 
   &__content {
+    @include for-laptop {
+      padding-right: 1rem;
+    }
   }
+
   &__heading {
     font-size: 2.4rem;
     font-weight: bold;
@@ -67,6 +110,9 @@
   &__quantity {
     justify-self: center;
     align-self: center;
+    @include for-laptop {
+      margin-top: 3rem;
+    }
     span {
       font-weight: bold;
     }
@@ -74,6 +120,9 @@
   &__full-price {
     justify-self: center;
     align-self: center;
+    @include for-laptop {
+      margin-top: 3rem;
+    }
     span {
       font-weight: bold;
     }
