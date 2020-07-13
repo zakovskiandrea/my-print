@@ -3,6 +3,11 @@
   padding-top: 19rem;
   padding-bottom: 9rem;
   background-color: #f1f1f1;
+  @include for-phone {
+    padding: 0;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .profile {
@@ -15,9 +20,15 @@
     font-weight: bold;
     border-bottom: 1px solid #e3e3e3;
     margin-bottom: 0;
+    @include for-tablet {
+      border: 1px solid #e3e3e3;
+    }
   }
   &__body {
     display: flex;
+    @include for-tablet {
+      flex-direction: column;
+    }
   }
   &__personal-info {
     flex: 1;
@@ -25,8 +36,10 @@
     padding: 7rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    @include for-tablet {
+      border: 1px solid #e3e3e3;
+    }
   }
   &__change-pass {
     flex: 1;
@@ -34,8 +47,10 @@
     padding: 7rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    @include for-tablet {
+      border: 1px solid #e3e3e3;
+    }
   }
   &__heading-secondary {
     font-size: 2.4rem;
