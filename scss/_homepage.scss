@@ -37,19 +37,19 @@
   .swiper-slide {
     display: flex;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     &--1 {
       background-image: url("../images/bckg-main.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
 
     &--2 {
-      background-color: lightblue;
+      background-image: url("../images/bckg-locations.png");
     }
 
     &--3 {
-      background-color: lightgray;
+      background-image: url("../images/bckg-outsideBranding.png");
     }
   }
 
@@ -307,7 +307,7 @@
   &__img {
     position: relative;
     flex: 0 0 50%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     .content01 {
       opacity: 1;
     }

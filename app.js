@@ -1,16 +1,17 @@
-var swiper = new Swiper(".swiper-container--homepage", {
-  slidesPerView: 1,
-  // loop: true,
-  direction: "vertical",
-  autoplay: {
-    delay: 5000,
-  },
-  speed: 1000,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: false,
-  },
-});
+if (window.innerWidth >= 768) {
+  var swiper = new Swiper(".swiper-container--homepage", {
+    slidesPerView: 1,
+    direction: "vertical",
+    autoplay: {
+      delay: 3000,
+    },
+    speed: 1000,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: false,
+    },
+  });
+}
 
 var swiper = new Swiper(".swiper-container--eshop", {
   loop: true,
@@ -66,14 +67,6 @@ var swiper = new Swiper(".swiper-container--similar-products", {
 var swiper = new Swiper(".swiper-container--locations", {
   loop: true,
   slidesPerView: window.innerWidth < 576 ? 1 : window.innerWidth < 992 ? 2 : 3,
-  // window.innerWidth < 769
-  //   ? 1.5
-  //   :
-
-  //   ? 2
-  //   : window.innerWidth < 1441
-  //   ? 3
-  //   : 4,
   spaceBetween: 0,
   navigation: {
     nextEl: ".locations-slider .arrow--next",
@@ -83,13 +76,6 @@ var swiper = new Swiper(".swiper-container--locations", {
 
 var swiper = new Swiper(".swiper-container--outsideBranding", {
   slidesPerView: 1.5,
-  // window.innerWidth < 769
-  //   ? 1.5
-  //   : window.innerWidth < 992
-  //   ? 2
-  //   : window.innerWidth < 1441
-  //   ? 3
-  //   : 4,
   spaceBetween: 15,
 });
 
@@ -147,7 +133,7 @@ $(document).click(function () {
 
 gsap.to(".homepage-branding", {
   scrollTrigger: {
-    start: "top +=100",
+    start: "top +=80",
     pin: ".homepage-branding__img",
     endTrigger: ".container-right",
     end: "bottom +=100%",

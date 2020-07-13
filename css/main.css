@@ -42,7 +42,8 @@ body {
   font-size: 1.6rem;
   letter-spacing: 0.02em;
   color: #fff;
-  padding: 2rem 4.5rem; }
+  padding: 2rem 4.5rem;
+  transition: all 0.2s ease-out; }
 
 .btn-second--blue {
   background-color: #18a0fb; }
@@ -137,23 +138,26 @@ body {
   margin: 0 auto; }
 
 .header {
-  height: 100px;
+  height: 80px;
   width: 100%;
   display: flex;
   background-color: transparent;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 20; }
+  z-index: 20;
+  transition: all 0.2s ease-out; }
   @media (max-width: 1199px) {
     .header {
       display: none; } }
   .header--white {
     background-color: #fff; }
-    .header--white li:last-child {
-      margin-right: 5rem; }
   .header--active {
     background-color: #fff; }
+  .header--profile .header__link:hover {
+    color: #5dbeff; }
+  .header--profile .header__link.active {
+    color: #5dbeff; }
   .header__logo-box {
     height: 50%;
     margin-left: 10rem; }
@@ -167,7 +171,8 @@ body {
   .header__list {
     display: flex;
     list-style: none;
-    margin-right: 4rem; }
+    margin-right: 4rem;
+    margin-bottom: 0; }
   .header__item {
     display: flex;
     align-items: center; }
@@ -179,7 +184,12 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: #141414; }
+    color: #141414;
+    transition: all 0.1s ease-out; }
+  .header__link:hover {
+    color: #bf2459; }
+  .header__link.active {
+    color: #bf2459; }
   .header__btn:link, .header__btn:visited {
     text-decoration: none;
     text-transform: uppercase;
@@ -392,7 +402,7 @@ body {
         right: 5%; }
 
 .landing {
-  height: 68rem;
+  height: 66rem;
   padding-top: 26rem;
   background-repeat: no-repeat;
   background-position: bottom; }
@@ -583,16 +593,16 @@ body {
   height: 100%; }
   .swiper-container--homepage .swiper-slide {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
     .swiper-container--homepage .swiper-slide--1 {
-      background-image: url("../images/bckg-main.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
+      background-image: url("../images/bckg-main.png"); }
     .swiper-container--homepage .swiper-slide--2 {
-      background-color: lightblue; }
+      background-image: url("../images/bckg-locations.png"); }
     .swiper-container--homepage .swiper-slide--3 {
-      background-color: lightgray; }
+      background-image: url("../images/bckg-outsideBranding.png"); }
   .swiper-container--homepage .swiper-scrollbar {
     left: 5rem;
     height: 50%;
@@ -798,7 +808,7 @@ body {
   .homepage-branding__img {
     position: relative;
     flex: 0 0 50%;
-    height: calc(100vh - 100px); }
+    height: calc(100vh - 80px); }
     .homepage-branding__img .content01 {
       opacity: 1; }
     .homepage-branding__img img {

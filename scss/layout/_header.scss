@@ -1,5 +1,5 @@
 .header {
-  height: 100px;
+  height: 80px;
   width: 100%;
   display: flex;
   background-color: transparent;
@@ -7,21 +7,29 @@
   justify-content: space-between;
   position: fixed;
   z-index: 20;
+  transition: all 0.2s ease-out;
+
   @include for-desktop {
     display: none;
   }
 
   &--white {
     background-color: #fff;
-    li {
-      &:last-child {
-        margin-right: 5rem;
-      }
-    }
   }
 
   &--active {
     background-color: #fff;
+  }
+
+  &--profile {
+    .header__link {
+      &:hover {
+        color: #5dbeff;
+      }
+      &.active {
+        color: #5dbeff;
+      }
+    }
   }
 
   &__logo-box {
@@ -41,6 +49,7 @@
     display: flex;
     list-style: none;
     margin-right: 4rem;
+    margin-bottom: 0;
   }
   &__item {
     display: flex;
@@ -58,6 +67,15 @@
       font-weight: 500;
       letter-spacing: 0.02em;
       color: #141414;
+      transition: all 0.1s ease-out;
+    }
+
+    &:hover {
+      color: rgb(191, 36, 89);
+    }
+
+    &.active {
+      color: rgb(191, 36, 89);
     }
   }
   &__btn {
