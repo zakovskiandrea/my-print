@@ -70,6 +70,9 @@ body {
   .product-card__heading {
     font-size: 2.4rem;
     margin-bottom: 1.5rem; }
+    .product-card__heading a:link, .product-card__heading a:visited {
+      text-decoration: none;
+      color: #000; }
   .product-card__text {
     font-size: 1.8rem;
     line-height: 3rem;
