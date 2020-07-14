@@ -272,6 +272,9 @@
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
+
   &__img {
     height: 10rem;
     width: 10rem;
@@ -281,6 +284,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+    transition: all 0.2s ease-in;
+    // align-self: center;
+    &:hover {
+      background-color: #bf245a89;
+    }
+
     @include for-phone {
       margin-bottom: 3rem;
     }
@@ -298,6 +307,7 @@
     font-size: 1.8rem;
     line-height: 3rem;
     margin-bottom: 4rem;
+    // text-align: center;
   }
   &__btn {
     &:link,
@@ -306,6 +316,19 @@
       font-size: 1.8rem;
       font-weight: bold;
       color: #343646;
+      align-self: flex-start;
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-color: #000;
+      transition: all 0.2s ease-out;
+    }
+    &:hover {
+      color: #bf2459;
+      text-decoration-color: #bf2459;
+
+      i {
+        border-color: #bf2459;
+      }
     }
     i {
       border: solid #343646;

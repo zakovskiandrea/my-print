@@ -777,45 +777,57 @@ body {
       .homepage-services__cards-container {
         grid-template-columns: 1fr; } }
 
-.service-card__img {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  background-color: #f3f3f3;
+.service-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5rem; }
-  @media (max-width: 575px) {
-    .service-card__img {
-      margin-bottom: 3rem; } }
-  .service-card__img img {
-    width: 5.5rem;
-    height: 5.5rem; }
-
-.service-card__heading {
-  font-size: 2.4rem;
-  margin-bottom: 3rem; }
-
-.service-card__text {
-  font-size: 1.8rem;
-  line-height: 3rem;
-  margin-bottom: 4rem; }
-
-.service-card__btn:link, .service-card__btn:visited {
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #343646; }
-
-.service-card__btn i {
-  border: solid #343646;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  margin-bottom: 1px;
-  margin-left: 5px; }
+  flex-direction: column; }
+  .service-card__img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    transition: all 0.2s ease-in; }
+    .service-card__img:hover {
+      background-color: #bf245a89; }
+    @media (max-width: 575px) {
+      .service-card__img {
+        margin-bottom: 3rem; } }
+    .service-card__img img {
+      width: 5.5rem;
+      height: 5.5rem; }
+  .service-card__heading {
+    font-size: 2.4rem;
+    margin-bottom: 3rem; }
+  .service-card__text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 4rem; }
+  .service-card__btn:link, .service-card__btn:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343646;
+    align-self: flex-start;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #000;
+    transition: all 0.2s ease-out; }
+  .service-card__btn:hover {
+    color: #bf2459;
+    text-decoration-color: #bf2459; }
+    .service-card__btn:hover i {
+      border-color: #bf2459; }
+  .service-card__btn i {
+    border: solid #343646;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-bottom: 1px;
+    margin-left: 5px; }
 
 .homepage-branding {
   display: flex; }
@@ -1538,7 +1550,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 8rem 0; }
+  padding: 8rem 1rem; }
   .product-type-card--1 {
     background-image: url("../images/product-type-1.png"); }
   .product-type-card--2 {
@@ -2081,14 +2093,15 @@ body {
         grid-template-columns: repeat(1, 1fr); } }
 
 .service-type-card__img {
-  height: 30rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 35rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem; }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 1rem; }
   .service-type-card__img--1 {
     background-image: url("../images/service-type-1.png"); }
   .service-type-card__img--2 {
@@ -2104,28 +2117,21 @@ body {
 
 .service-type-card__heading {
   font-size: 4rem;
-  color: #fff;
-  text-transform: uppercase;
+  line-height: 5rem;
   font-weight: bold;
-  text-align: center; }
-  @media (max-width: 991px) {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem; }
+  @media (max-width: 1199px) {
     .service-type-card__heading {
       font-size: 3.5rem; } }
-
-.service-type-card__text {
-  font-size: 2rem;
-  line-height: 3rem;
-  margin-bottom: 2rem; }
+  @media (max-width: 768px) {
+    .service-type-card__heading {
+      font-size: 2.8rem; } }
 
 .service-type-card__btn:link, .service-type-card__btn:visited {
-  display: inline-block;
-  text-decoration: none;
   font-size: 1.8rem;
-  padding: 1.5rem 4rem;
-  color: #000;
-  border: 1px solid #2737c4;
-  transition: all 0.2s ease-out; }
-
-.service-type-card__btn:hover {
   color: #fff;
-  background-color: #2737c4; }
+  border: 1px solid #fff;
+  padding: 1rem 3rem; }
