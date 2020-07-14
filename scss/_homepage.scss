@@ -188,10 +188,18 @@
   height: 100%;
 
   .swiper-slide {
+    &:hover {
+      img {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
     img {
+      position: absolute;
       height: 100%;
       width: 100%;
       object-fit: cover;
+      transition: all 0.2s ease-out;
     }
   }
 }
@@ -222,12 +230,13 @@
     margin-bottom: 3rem;
   }
   &__btn {
-    align-self: flex-start;
-    margin-top: auto;
-    margin-bottom: 2rem;
     &:link,
     &:visited {
       padding: 2rem 3rem;
+      align-self: flex-start;
+      margin-top: auto;
+      margin-bottom: 2rem;
+      cursor: pointer;
     }
   }
 }

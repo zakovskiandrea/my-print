@@ -715,10 +715,15 @@ body {
 
 .swiper-container--eshop {
   height: 100%; }
+  .swiper-container--eshop .swiper-slide:hover img {
+    opacity: 0;
+    pointer-events: none; }
   .swiper-container--eshop .swiper-slide img {
+    position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    transition: all 0.2s ease-out; }
 
 .slide-card {
   padding: 0 2rem;
@@ -740,12 +745,12 @@ body {
     color: #fff;
     line-height: 3rem;
     margin-bottom: 3rem; }
-  .slide-card__btn {
+  .slide-card__btn:link, .slide-card__btn:visited {
+    padding: 2rem 3rem;
     align-self: flex-start;
     margin-top: auto;
-    margin-bottom: 2rem; }
-    .slide-card__btn:link, .slide-card__btn:visited {
-      padding: 2rem 3rem; }
+    margin-bottom: 2rem;
+    cursor: pointer; }
 
 .homepage-services {
   padding: 13rem 0; }
