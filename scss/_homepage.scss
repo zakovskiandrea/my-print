@@ -66,6 +66,23 @@
     width: 7px;
     left: -1px;
   }
+
+  .swiper-pagination {
+    left: 6.5rem;
+    top: 50%;
+  }
+}
+
+.swiper-container--homepage
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 2rem 0;
+  height: 1rem;
+  width: 1rem;
+
+  &-active {
+    background-color: #2f2e2e;
+  }
 }
 
 .slide-content {

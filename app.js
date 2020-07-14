@@ -10,6 +10,10 @@ if (window.innerWidth >= 768) {
       el: ".swiper-scrollbar",
       hide: false,
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 }
 
