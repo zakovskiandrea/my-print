@@ -77,6 +77,13 @@
       }
     }
   }
+
+  &__list {
+    list-style-position: inside;
+  }
+  &__item {
+    font-size: 1.8rem;
+  }
   &__text {
     font-size: 1.8rem;
     line-height: 3rem;

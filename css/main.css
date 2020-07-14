@@ -73,6 +73,10 @@ body {
     .product-card__heading a:link, .product-card__heading a:visited {
       text-decoration: none;
       color: #000; }
+  .product-card__list {
+    list-style-position: inside; }
+  .product-card__item {
+    font-size: 1.8rem; }
   .product-card__text {
     font-size: 1.8rem;
     line-height: 3rem;
@@ -529,6 +533,9 @@ body {
     .characteristics__text span {
       color: #bf2459;
       font-weight: bold; }
+  .characteristics__btn {
+    margin-top: 2rem;
+    display: inline-block; }
 
 .swiper-container--outsideBranding {
   background-color: #2737c4;

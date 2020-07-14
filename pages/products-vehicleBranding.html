@@ -26,7 +26,7 @@
                 <li class="header__item"><a href="./homepage.html" class="header__link">Почетна</a></li>
                 <li class="header__item"><a href="#" class="header__link">За Нас</a></li>
                 <li class="header__item"><a href="./services.html" class="header__link">Услуги</a></li>
-                <li class="header__item"><a href="./products.html" class="header__link active">Производи</a></li>
+                <li class="header__item"><a href="./products.html" class="header__link">Производи</a></li>
                 <li class="header__item"><a href="./designers-guide.html" class="header__link">Водич За Дизајнери</a>
                 </li>
             </ul>
@@ -61,41 +61,71 @@
         </div>
     </header>
     <!-- HEADER-MOBILE END -->
-    <!-- PRODUCTS MAIN -->
-    <section class="products-main">
+    <!-- SECTION LANDING -->
+    <section class="landing landing--outside-branding">
         <div class="u-wrapper">
-            <h4 class="products-main__label heading-4 heading-4--blue-dark">Производи</h4>
-            <h2 class="products-main__heading heading-2">Lorem ipsum dolor sit
-                amet est sed do eiusmmod</h2>
-            <div class="products-main__products-container">
-                <div class="product-type-card product-type-card--1">
-                    <h2 class="product-type-card__heading">Надворешно Брендирање</h2>
-                    <a href="./products-outsideBranding.html" class="product-type-card__btn">Дознај Повеќе</a>
+            <h4 class="landing__label heading-4">Производ</h4>
+            <h2 class="landing__heading heading-2">Брендирање на Возила
+            </h2>
+        </div>
+    </section>
+    <!-- SECTION LANDING END -->
+    <section class="characteristics">
+
+        <ul class="characteristics__list characteristics__list--desktop nav nav-tabs" id="myTab" role="tablist">
+            <li class="characteristics__item" role="presentation">
+                <a class="characteristics__link active" id="vozila-tab" data-toggle="tab" href="#vozila" role="tab"
+                    aria-controls="vozila" aria-selected="true">Брендирање на Возила</a>
+            </li>
+        </ul>
+        <div class="swiper-container swiper-container--outsideBranding">
+            <ul class="swiper-wrapper nav nav-tabs" id="myTab" role="tablist">
+                <li class="swiper-slide characteristics__item" role="presentation">
+                    <a class="characteristics__link active" id="vozila-tab" data-toggle="tab" href="#vozila" role="tab"
+                        aria-controls="vozila" aria-selected="true">Брендирање на Возила</a>
+                </li>
+            </ul>
+        </div>
+        <div class="characteristics__content tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="vozila" role="tabpanel" aria-labelledby="vozila-tab">
+                <h2 class="characteristics__heading heading-2">Брендирање на Возила</h2>
+                <h4 class="characteristics__label heading-4 heading-4--black">Карактеристики:</h4>
+                <p class="characteristics__text">
+                    <span>Формат: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="characteristics__text">
+                    <span>Материјали: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="characteristics__text">
+                    <span>Печатење: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="characteristics__text">
+                    <span>Завршна Обработка: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a class="characteristics__btn btn-second btn-second--red" href="#">Види Галерија</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- SECTION LOCATIONS SLIDER-->
+    <section class="locations-slider">
+        <div class="arrow arrow--next"><img src="../images/arrow-right.svg" alt="right"></div>
+        <div class="arrow arrow--prev"><img src="../images/arrow-left.svg" alt="left"></div>
+        <div class="swiper-container swiper-container--locations">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/installing-1.png" alt="installing">
                 </div>
-                <div class="product-type-card product-type-card--2">
-                    <h2 class="product-type-card__heading">Внатрешно Брендирање</h2>
-                    <a href="./products-indoorBranding.html" class="product-type-card__btn">Дознај Повеќе</a>
+                <div class="swiper-slide">
+                    <img src="../images/installing-2.png" alt="installing">
                 </div>
-                <div class="product-type-card product-type-card--3">
-                    <h2 class="product-type-card__heading">Брендирање На Возила</h2>
-                    <a href="./products-vehicleBranding.html" class="product-type-card__btn">Дознај Повеќе</a>
-                </div>
-                <div class="product-type-card product-type-card--4">
-                    <h2 class="product-type-card__heading">Промо Медиа</h2>
-                    <a href="./products-promo.html" class="product-type-card__btn">Дознај Повеќе</a>
-                </div>
-                <div class="product-type-card product-type-card--5">
-                    <h2 class="product-type-card__heading">Фотографии И Репродукција</h2>
-                    <a href="./products-photographs.html" class="product-type-card__btn">Дознај Повеќе</a>
-                </div>
-                <div class="product-type-card product-type-card--6">
-                    <h2 class="product-type-card__heading">Маркетинг И Промоции</h2>
-                    <a href="./products-marketing.html" class="product-type-card__btn">Дознај Повеќе</a>
+                <div class="swiper-slide">
+                    <img src="../images/installing-3.png" alt="installing">
                 </div>
             </div>
         </div>
     </section>
-    <!-- PRODUCTS MAIN END -->
+    <!-- SECTION LOCATIONS SLIDER END-->
     <!-- SECTION CONTACT-->
     <section class="contact">
         <div class="u-wrapper">
