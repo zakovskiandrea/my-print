@@ -16,6 +16,34 @@
 </head>
 
 <body>
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-gallery">
+                <div class="swiper-container  gallery-top gallery-top--modal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--1"></div>
+                        <div class="swiper-slide swiper-slide--2"></div>
+                        <div class="swiper-slide swiper-slide--3"></div>
+                        <div class="swiper-slide swiper-slide--4"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs gallery-thumbs--modal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--1"></div>
+                        <div class="swiper-slide swiper-slide--2"></div>
+                        <div class="swiper-slide swiper-slide--3"></div>
+                        <div class="swiper-slide swiper-slide--4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL END -->
     <!-- HEADER -->
     <header class="header header--white">
         <div class="header__logo-box">
@@ -102,7 +130,8 @@
                 <p class="characteristics__text">
                     <span>Завршна Обработка: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                <a class="characteristics__btn btn-second btn-second--red" href="#">Види Галерија</a>
+                <button class="characteristics__btn" type="button" data-toggle="modal" data-target="#exampleModal">Види
+                    Галерија</button>
             </div>
         </div>
 

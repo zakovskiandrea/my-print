@@ -231,3 +231,30 @@ $(document).ready(function () {
     } // End if
   });
 });
+
+$("#exampleModal").on("show.bs.modal", function (e) {
+  console.log("modal opened");
+  setTimeout(() => {
+    var galleryThumbs = new Swiper(".gallery-thumbs--modal", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper(".gallery-top--modal", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+  }, 500);
+});
+
+// $(".characteristics__btn").click(() => {
+//   $(".modal-dialog").modal("show");
+// });

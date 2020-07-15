@@ -87,7 +87,14 @@
   }
   &__btn {
     margin-top: 2rem;
-    display: inline-block;
+    background-color: #bf2459;
+    color: #fff;
+    border: none;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    &:focus {
+      outline: none;
+    }
   }
 }
 
