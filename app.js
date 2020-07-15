@@ -83,6 +83,24 @@ var swiper = new Swiper(".swiper-container--outsideBranding", {
   spaceBetween: 15,
 });
 
+var galleryThumbs = new Swiper(".gallery-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper(".gallery-top", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 50) {
     $(".header").addClass("header--active");
