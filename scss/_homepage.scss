@@ -284,19 +284,28 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
     // align-self: center;
     &:hover {
-      background-color: #bf245a89;
+      & {
+        background-color: #bf2459;
+      }
+      path {
+        fill: #fff;
+        transition: all 0.2s ease-out;
+      }
     }
 
     @include for-phone {
       margin-bottom: 3rem;
     }
 
-    img {
+    svg {
       width: 5.5rem;
       height: 5.5rem;
+      path {
+        fill: #bf2459;
+      }
     }
   }
   &__heading {

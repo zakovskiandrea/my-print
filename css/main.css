@@ -796,15 +796,20 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
-    transition: all 0.2s ease-in; }
+    transition: all 0.2s ease-out; }
     .service-card__img:hover {
-      background-color: #bf245a89; }
+      background-color: #bf2459; }
+    .service-card__img:hover path {
+      fill: #fff;
+      transition: all 0.2s ease-out; }
     @media (max-width: 575px) {
       .service-card__img {
         margin-bottom: 3rem; } }
-    .service-card__img img {
+    .service-card__img svg {
       width: 5.5rem;
       height: 5.5rem; }
+      .service-card__img svg path {
+        fill: #bf2459; }
   .service-card__heading {
     font-size: 2.4rem;
     margin-bottom: 3rem; }
