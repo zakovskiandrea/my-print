@@ -248,7 +248,3 @@ $(".select-dropdown-box select").change(function (e) {
     $(".input-dimensions").css("display", "none");
   }
 });
-
-// $(".characteristics__btn").click(() => {
-//   $(".modal-dialog").modal("show");
-// });
