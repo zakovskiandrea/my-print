@@ -134,6 +134,20 @@
   }
   &__details {
     flex: 1;
+    .input-dimensions {
+      display: none;
+      width: 50%;
+      height: 4.5rem;
+      padding: 0 2rem;
+      background-color: #faf8f8;
+      border: 1px solid #cacaca;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
   &__heading {
     font-weight: bold;
@@ -150,7 +164,7 @@
     margin-bottom: 3rem;
   }
   &__inputs-box {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     display: flex;
 
     @include for-laptop {

@@ -1318,6 +1318,17 @@ body {
 
 .product__details {
   flex: 1; }
+  .product__details .input-dimensions {
+    display: none;
+    width: 50%;
+    height: 4.5rem;
+    padding: 0 2rem;
+    background-color: #faf8f8;
+    border: 1px solid #cacaca;
+    font-size: 1.8rem;
+    margin-bottom: 1rem; }
+    .product__details .input-dimensions:focus {
+      outline: none; }
 
 .product__heading {
   font-weight: bold;
@@ -1334,7 +1345,7 @@ body {
   margin-bottom: 3rem; }
 
 .product__inputs-box {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   display: flex; }
   @media (max-width: 991px) {
     .product__inputs-box {
