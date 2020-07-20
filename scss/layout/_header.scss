@@ -35,6 +35,9 @@
   &__logo-box {
     height: 50%;
     margin-left: 10rem;
+    @include for-laptop {
+      margin-left: 5rem;
+    }
   }
   &__logo {
     height: 100%;
@@ -50,6 +53,9 @@
     list-style: none;
     margin-right: 4rem;
     margin-bottom: 0;
+    @include for-laptop {
+      margin-right: 0;
+    }
   }
   &__item {
     display: flex;
@@ -125,10 +131,11 @@
     position: absolute;
     right: 0;
     background-color: #fff;
-    min-width: 32rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 50rem;
     z-index: 1;
-    border-radius: 10px;
+    @include for-phone {
+      width: 100vw;
+    }
 
     &--white {
       background-color: #fff;
@@ -151,12 +158,22 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid #7180964f;
+      display: flex;
+      justify-content: space-between;
     }
 
     &--blue {
       background-color: #18a0fb;
       a {
         color: #fff;
+        @include for-phone {
+          margin-left: 0;
+        }
+      }
+      @include for-phone {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
       }
     }
   }

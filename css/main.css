@@ -145,6 +145,9 @@ body {
 .u-wrapper {
   width: 80%;
   margin: 0 auto; }
+  @media (max-width: 575px) {
+    .u-wrapper {
+      width: 90%; } }
 
 .header {
   height: 80px;
@@ -170,6 +173,9 @@ body {
   .header__logo-box {
     height: 50%;
     margin-left: 10rem; }
+    @media (max-width: 991px) {
+      .header__logo-box {
+        margin-left: 5rem; } }
   .header__logo {
     height: 100%;
     width: auto; }
@@ -182,6 +188,9 @@ body {
     list-style: none;
     margin-right: 4rem;
     margin-bottom: 0; }
+    @media (max-width: 991px) {
+      .header__list {
+        margin-right: 0; } }
   .header__item {
     display: flex;
     align-items: center; }
@@ -234,10 +243,11 @@ body {
     position: absolute;
     right: 0;
     background-color: #fff;
-    min-width: 32rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px; }
+    width: 50rem;
+    z-index: 1; }
+    @media (max-width: 575px) {
+      .header-phone__dropdown-content {
+        width: 100vw; } }
     .header-phone__dropdown-content--white {
       background-color: #fff; }
   .header-phone .header__list {
@@ -251,11 +261,21 @@ body {
     .header-phone .header__item img {
       margin-right: 2rem; }
     .header-phone .header__item:not(:last-child) {
-      border-bottom: 1px solid #7180964f; }
+      border-bottom: 1px solid #7180964f;
+      display: flex;
+      justify-content: space-between; }
     .header-phone .header__item--blue {
       background-color: #18a0fb; }
       .header-phone .header__item--blue a {
         color: #fff; }
+        @media (max-width: 575px) {
+          .header-phone .header__item--blue a {
+            margin-left: 0; } }
+      @media (max-width: 575px) {
+        .header-phone .header__item--blue {
+          margin-top: 2rem;
+          display: flex;
+          justify-content: center; } }
   .header-phone .header__link {
     font-size: 1.8rem;
     margin-left: 1.5rem;
@@ -266,7 +286,7 @@ body {
 
 .contact {
   background-color: #1a1919;
-  padding: 15rem 0; }
+  padding: 7rem 0; }
   @media (max-width: 991px) {
     .contact {
       padding: 0;
@@ -1037,7 +1057,8 @@ body {
   padding: 5rem 0; }
   @media (max-width: 575px) {
     .eshop-shop {
-      padding-top: 0; } }
+      padding-top: 0;
+      overflow: hidden; } }
   @media (max-width: 575px) {
     .eshop-shop .u-wrapper {
       margin: 0;

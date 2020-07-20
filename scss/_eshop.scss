@@ -2,6 +2,7 @@
   padding: 5rem 0;
   @include for-phone {
     padding-top: 0;
+    overflow: hidden;
   }
   .u-wrapper {
     @include for-phone {

@@ -1,4 +1,7 @@
 .u-wrapper {
   width: 80%;
   margin: 0 auto;
+  @include for-phone {
+    width: 90%;
+  }
 }
