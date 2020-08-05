@@ -1,8 +1,14 @@
 .product-info {
   padding-top: 16rem;
   padding-bottom: 8rem;
+
   @include for-tablet {
     padding-bottom: 3rem;
+  }
+  .u-wrapper {
+    width: 90%;
+    margin: 0;
+    margin-left: auto;
   }
   &__breadcrumbs {
     font-size: 2rem;
@@ -11,6 +17,10 @@
     @include for-tablet {
       display: none;
     }
+  }
+  &__img-wrapper {
+    overflow: hidden;
+    flex: 1;
   }
   &__product-content {
     display: flex;
@@ -50,12 +60,17 @@
 
 .product {
   &__img {
-    width: 50%;
+    flex: 1;
     padding: 0 3rem;
+    overflow: hidden;
+    height: 80rem;
     @include for-tablet {
       width: 100%;
       height: 40rem;
       padding: 0;
+    }
+    &__img-wrapper {
+      padding: 3rem;
     }
     .swiper-container {
       width: 100%;
@@ -67,6 +82,7 @@
     .swiper-slide {
       background-size: cover;
       background-position: center;
+      width: 100%;
       &--1 {
         background-image: url("../images/product-1.png");
       }
@@ -133,7 +149,10 @@
     }
   }
   &__details {
-    flex: 1;
+    width: 50rem;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
     .input-dimensions {
       display: none;
       width: 50%;
@@ -299,6 +318,66 @@
 
     &:focus {
       outline: none;
+    }
+  }
+}
+
+.product-form {
+  label {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  &__price-m2 {
+    font-size: 2rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__width {
+    display: flex;
+    flex-direction: column;
+    input {
+      font-size: 1.5rem;
+      width: 8rem;
+    }
+  }
+  &__height {
+    display: flex;
+    flex-direction: column;
+    input {
+      font-size: 1.5rem;
+      width: 8rem;
+    }
+  }
+  &__price-product {
+    font-size: 2rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__quantity {
+    display: flex;
+    flex-direction: column;
+    input {
+      font-size: 1.5rem;
+      width: 8rem;
+    }
+  }
+  &__price-total {
+    font-size: 2.3rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__date {
+    font-size: 2rem;
+    span {
+      display: block;
+    }
+    img {
+      height: 1.7rem;
+      cursor: pointer;
     }
   }
 }

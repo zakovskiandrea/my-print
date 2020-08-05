@@ -248,3 +248,39 @@ $(".select-dropdown-box select").change(function (e) {
     $(".input-dimensions").css("display", "none");
   }
 });
+
+$(document).ready(() => {
+  const widthInput = $(".product-form__width input");
+  const heightInput = $(".product-form__height input");
+  const qunatityInput = $(".product-form__quantity input");
+  const priceM2 = $(".product-form__price-m2 span").text() * 1;
+  const price = $(".product-form__price-product span");
+  const totalPrice = $(".product-form__price-total span");
+
+  function calculatePrice() {
+    const calculatedPrice = (
+      widthInput.val() *
+      1 *
+      (heightInput.val() * 1) *
+      0.0001 *
+      priceM2
+    ).toFixed(2);
+
+    price.text(calculatedPrice);
+    if (qunatityInput.val() === "0") return;
+    totalPrice.text((calculatedPrice * qunatityInput.val()).toFixed(2));
+  }
+
+  widthInput.change(function () {
+    if (widthInput.val() === "0" || heightInput.val() === "0") return;
+    calculatePrice();
+  });
+  heightInput.change(function () {
+    if (widthInput.val() === "0" || heightInput.val() === "0") return;
+    calculatePrice();
+  });
+  qunatityInput.change(function () {
+    if (widthInput.val() === "0" || heightInput.val() === "0") return;
+    calculatePrice();
+  });
+});
