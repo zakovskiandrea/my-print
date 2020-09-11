@@ -24,7 +24,7 @@
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a href="./homepage.html" class="header__link">Почетна</a></li>
-                <li class="header__item"><a href="#" class="header__link">Регистрација</a></li>
+                <li class="header__item"><a href="#" class="header__link header__link--register">Регистрација</a></li>
                 <li class="header__item"><a href="./orders-history.html" class="header__link">Мои Нарачки</a></li>
                 <li class="header__item"><a href="./cart.html" class="header__link"><img src="../images/bag-icon.svg"
                             alt="bag"></a></li>
@@ -479,6 +479,44 @@
                     tabindex="0"></iframe></div>
         </div>
     </section>
+    <div class="popup-modal popup-modal--register">
+        <img class="popup-modal__cancel" src="../images/cancel.svg" alt="cancel">
+        <div class="popup-modal__box">
+            <label for="name">Име и Презиме</label>
+            <input id="name" type="text">
+        </div>
+        <div class="popup-modal__box">
+            <label for="email">E-Mail адреса</label>
+            <input id="email" type="email">
+        </div>
+        <div class="popup-modal__box">
+            <label for="address">Адреса на достава</label>
+            <input id="address" type="text">
+        </div>
+        <div class="popup-modal__wrapper">
+            <div class="popup-modal__box">
+                <label for="city">Град</label>
+                <input id="city" type="text">
+            </div>
+            <div class="popup-modal__box">
+                <label for="zip">Zip код</label>
+                <input id="zip" type="number">
+            </div>
+        </div>
+        <button class="popup-modal__btn">Регистрирај се</button>
+    </div>
+    <div class="popup-modal popup-modal--login">
+        <img class="popup-modal__cancel" src="../images/cancel.svg" alt="cancel">
+        <div class="popup-modal__box">
+            <label for="name">E-Mail</label>
+            <input id="name" type="email">
+        </div>
+        <div class="popup-modal__box">
+            <label for="pass">E-Mail адреса</label>
+            <input id="pass" type="text">
+        </div>
+        <button class="popup-modal__btn">Најави се</button>
+    </div>
     <!-- SECTION CONTACT END-->
     <!-- SECTION FOOTER-->
     <footer class="footer">

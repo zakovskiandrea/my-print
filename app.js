@@ -153,6 +153,27 @@ $(document).click(function () {
   $(".header-phone__dropdown-content").removeClass("show");
 });
 
+$(document).ready(function () {
+  $(".header__link--register").click((e) => {
+    $(".popup-modal--register").addClass("show");
+    e.stopPropagation();
+  });
+
+  $(".popup-modal__cancel").click(() => {
+    $(".popup-modal--register").removeClass("show");
+  });
+
+  $(".header__link--profile").click((e) => {
+    $(".popup-modal--login").addClass("show");
+  });
+
+  $(".popup-modal__cancel").click(() => {
+    $(".popup-modal--login").removeClass("show");
+  });
+});
+
+// && modal.has(e.target).length
+
 gsap.to(".homepage-branding", {
   scrollTrigger: {
     start: "top +=80",
